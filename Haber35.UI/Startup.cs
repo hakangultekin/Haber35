@@ -1,3 +1,6 @@
+using AspNetCoreHero.ToastNotification;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -7,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace Haber35.UI
@@ -24,6 +28,18 @@ namespace Haber35.UI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            // Configure Fluent Validation
+            services.AddFluentValidationAutoValidation();
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+            // Configure Hero notification
+            services.AddNotyf(options =>
+            {
+                options.IsDismissable = true;
+                options.Position = NotyfPosition.BottomRight;
+                options.HasRippleEffect = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

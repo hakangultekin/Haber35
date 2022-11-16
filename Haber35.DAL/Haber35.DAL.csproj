@@ -17,4 +17,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Haber35.CORE\Haber35.CORE.csproj" />
+  </ItemGroup>
+
 </Project>
