@@ -8,4 +8,9 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Haber35.CORE\Haber35.CORE.csproj" />
+    <ProjectReference Include="..\Haber35.DAL\Haber35.DAL.csproj" />
+  </ItemGroup>
+
 </Project>

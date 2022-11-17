@@ -1,4 +1,5 @@
 ﻿using Haber35.CORE.Concretes;
+using Haber35.DAL.SeedData;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -28,6 +29,7 @@ namespace Haber35.DAL
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
             base.OnModelCreating(builder);
+            builder.Seed();
         }
     }
 }

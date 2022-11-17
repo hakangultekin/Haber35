@@ -1,9 +1,15 @@
 using AspNetCoreHero.ToastNotification;
+using AspNetCoreHero.ToastNotification.Extensions;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Haber35.BLL.Validators;
+using Haber35.CORE.Concretes;
+using Haber35.DAL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -28,6 +34,32 @@ namespace Haber35.UI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:ConnString"]));
+
+            // Identity configs
+            services.AddIdentity<AppUser, IdentityRole>(config =>
+            {
+                config.Password.RequiredLength = 4;
+                config.Password.RequireDigit = false;
+                config.Password.RequireNonAlphanumeric = false;
+                config.Password.RequireUppercase = false;
+                config.SignIn.RequireConfirmedEmail = false;
+
+                config.User.RequireUniqueEmail = true;  // benzersiz mail zorunluluðu
+                config.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+            }).AddEntityFrameworkStores<AppDbContext>()
+            .AddTokenProvider<DataProtectorTokenProvider<AppUser>>(TokenOptions.DefaultProvider)
+            .AddErrorDescriber<CustomIdentityErrorDescriber>()
+            .AddEntityFrameworkStores<AppDbContext>();
+
+            // Cookie options
+            services.ConfigureApplicationCookie(option =>
+            {
+                option.Cookie.Name = "Identity";
+                option.ExpireTimeSpan = TimeSpan.FromDays(1);
+                option.SlidingExpiration = true;    // iþlem yaptýkca süreyi uzatacak
+                option.LoginPath = "/Home/Login";
+            });
 
             // Configure Fluent Validation
             services.AddFluentValidationAutoValidation();
@@ -60,7 +92,10 @@ namespace Haber35.UI
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseNotyf();
 
             app.UseEndpoints(endpoints =>
             {

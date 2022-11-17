@@ -14,8 +14,6 @@ namespace Haber35.DAL.EntityConfigurations
         public void Configure(EntityTypeBuilder<Article> builder)
         {
             builder.HasOne(x => x.CreatorUser).WithMany(x => x.Articles).HasForeignKey(x => x.CreatorUserId);
-            builder.HasOne(x => x.ModifierUser).WithMany(x => x.Articles).HasForeignKey(x => x.ModifierUserId);
-            builder.HasOne(x => x.DeletoryUser).WithMany(x => x.Articles).HasForeignKey(x => x.DeletoryUserId);
             builder.HasMany(x => x.Comments).WithOne(x => x.Article).HasForeignKey(x => x.ArticleId);
             builder.HasMany(x => x.Categories).WithMany(x => x.Articles);
             builder.Property(x => x.Title).IsRequired().HasMaxLength(250);
