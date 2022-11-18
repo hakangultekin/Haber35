@@ -5,6 +5,7 @@ using Haber35.UI.Models.VMs.Admin;
 using Haber35.UI.Models.VMs.Article;
 using Haber35.UI.Models.VMs.Category;
 using Haber35.UI.Models.VMs.Comment;
+using Haber35.UI.Models.VMs.Home;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,10 +20,11 @@ namespace Haber35.UI.Profiles
         {
             CreateMap<AppUser, AdminUpdateVM>().ReverseMap().ForMember("ImagePath", x => x.Ignore());
 
-            CreateMap<ArticleDTO, IndexVM>();
+            CreateMap<ArticleDTO, Models.VMs.Admin.IndexVM>();
             CreateMap<ArticleDTO, ArticleListVM>();
             CreateMap<ArticleDTO, ArticleUpdateVM>();
             CreateMap<ArticleDTO, PassiveArticleVM>();
+            CreateMap<ArticleDTO, CategoryArticlesVM>();
             CreateMap<ArticleCreateVM, ArticleCreateDTO>();
             CreateMap<ArticleUpdateVM, ArticleUpdateDTO>();
 

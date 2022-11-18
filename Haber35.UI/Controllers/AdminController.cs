@@ -60,6 +60,14 @@ namespace Haber35.UI.Controllers
                 return RedirectToAction(controllerName: "Home", actionName: "Login");
             }
 
+
+            if (!ModelState.IsValid)
+            {
+                model.ImagePath = user.ImagePath;
+                _notifyService.Error("Güncelleme başarısız lütfen girdiğiniz bilgileri kontrol edin !");
+                return View(model);
+            }
+
             user = _mapper.Map(model, user);
             IdentityResult result = await _userManager.UpdateAsync(user);
             if (result.Succeeded)
@@ -83,7 +91,6 @@ namespace Haber35.UI.Controllers
                     msg.Append($"<p>{item.Description}</p>");
                 }
                 _notifyService.Error(msg.ToString());
-                return View(model);
             };
 
             model.ImagePath = user.ImagePath;

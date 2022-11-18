@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Haber35.BLL.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Haber35.BLL.DTOs
+namespace Haber35.UI.Models.VMs.Home
 {
-    public class ArticleDTO
+    public class ArticleVM
     {
         public Guid Id { get; set; }
         public string AuthorUserName { get; set; }
@@ -33,8 +34,15 @@ namespace Haber35.BLL.DTOs
             }
         }
 
+        public string ShortTitle { get {
+                if (Title.Length > 50)
+                    return Title.Substring(0, 50) + "...";
+                else
+                    return Title;
+            } }
+
         public DateTime CreatedDate { get; set; }
-        public DateTime? ModifiedDate { get; set; }
         public List<CategoryDTO> Categories = new List<CategoryDTO>();
     }
 }
+

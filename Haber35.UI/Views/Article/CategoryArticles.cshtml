@@ -1,0 +1,78 @@
+﻿@using Haber35.UI.Models.VMs.Article
+@model IEnumerable<CategoryArticlesVM>
+
+@{
+    ViewData["Title"] = $"{ViewBag.Category} Konulu Haber Listesi";
+    Layout = "_Layout";
+}
+
+
+<div class="col-md-8">
+    <section class="wrapper__list__article">
+        <h4 class="border_section">@ViewBag.Category</h4>
+
+        <div class="wrapp__list__article-responsive">
+
+            @foreach (var item in Model)
+           {
+               <!-- Post Article List -->
+            <div class="card__post card__post-list card__post__transition mt-30">
+                <div class="row ">
+                    <div class="col-md-5">
+                        <div class="card__post__transition">
+                            <a asp-controller="Article" asp-action="ArticleDetail" asp-route-id="@item.Id">
+                                <img src="@item.ImagePath" class="img-fluid w-100"
+                                     alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 my-auto pl-0">
+                        <div class="card__post__body ">
+                            <div class="card__post__content  ">
+                                <div class="card__post__category ">
+                                    @(string.Join(',', item.Categories.Select(x => x.CategoryName)))
+                                </div>
+                                <div class="card__post__author-info mb-2">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <span class="text-primary">
+                                                @item.AuthorUserName
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span class="text-dark text-capitalize">
+                                                @item.CreatedDate.ToString("dd-MM-yyyy")
+                                            </span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="card__post__title">
+                                    <h5>
+                                        <a asp-controller="Article" asp-action="ArticleDetail" asp-route-id="@item.Id">
+                                            @item.ShortTitle
+                                        </a>
+                                    </h5>
+                                    <p class="d-none d-lg-block d-xl-block mb-0">
+                                        @item.ShortContent
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           }
+
+            
+            
+        </div>
+    </section>
+
+
+</div>
+
+

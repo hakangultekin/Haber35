@@ -143,6 +143,7 @@ namespace Haber35.UI.Controllers
             return RedirectToAction(controllerName: "Admin", actionName: "Index");
         }
 
+        [Authorize]
         public async Task<IActionResult> GetByCategory(Guid catgoryId)
         {
             CategoryDTO cat = await _categoryService.GetByIdAsync(catgoryId);
@@ -155,5 +156,6 @@ namespace Haber35.UI.Controllers
             ViewBag.Category = cat.CategoryName;
             return View(_mapper.Map<IEnumerable<ArticleListVM>>(await _articleService.GetArticlesByCategory(cat.Id)));
         }
+
     }
 }

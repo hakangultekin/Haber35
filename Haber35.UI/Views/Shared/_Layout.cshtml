@@ -15,7 +15,7 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500&family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,400&display=swap"
           rel="stylesheet">
-    <link href="./HomeAssets/css/styles.css" rel="stylesheet">
+    <link href="~/HomeAssets/css/styles.css" rel="stylesheet">
     @await RenderSectionAsync("Styles", required: false)
 </head>
 
@@ -25,7 +25,7 @@
         <div class="h-100 d-flex align-items-center justify-content-center">
             <ul class="list-unstyled">
                 <li>
-                    <img src="images/placeholder/loading.png" alt="Alternate Text" height="100" />
+                    <img src="~/images/placeholder/loading.png" alt="Alternate Text" height="100" />
 
                 </li>
                 <li>
@@ -48,7 +48,7 @@
     </div>
     <!-- End loading -->
     <!-- Header news -->
-    <header class="bg-light">
+    @*<header class="bg-light">
         <!-- Navbar  -->
         <!-- Navbar menu  -->
         <div class="navigation-wrap navigation-shadow bg-white">
@@ -61,7 +61,7 @@
                     </div>
                     <figure class="mb-0 mx-auto">
                         <a asp-action="Index">
-                            <img src="images/placeholder/logo.jpg" alt="" class="img-fluid logo">
+                            <img src="images/placeholder/logo.png" width="200" alt="" class="img-fluid logo">
                         </a>
                     </figure>
 
@@ -234,7 +234,9 @@
         </div> <!-- modal./HomeAssets// -->
         <!-- End Navbar sidebar menu  -->
         <!-- End Navbar  -->
-    </header>
+    </header>*@
+
+    @await Component.InvokeAsync("Header")
     <!-- End Header news -->
     @RenderBody()
 
@@ -377,7 +379,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <figure class="image-logo">
-                                        <img src="images/placeholder/logo.jpg" alt="" class="logo-footer">
+                                        <img src="~/images/placeholder/logoyeni.png" alt="" class="logo-footer">
                                     </figure>
                                 </div>
                                 <div class="col-md-8 my-auto ">
@@ -425,7 +427,7 @@
 
     <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <script type="text/javascript" src="./HomeAssets/js/index.bundle.js"></script>
+    <script type="text/javascript" src="~/HomeAssets/js/index.bundle.js"></script>
 </body>
     @await RenderSectionAsync("Scripts", required: false)
     @await Component.InvokeAsync("Notyf")

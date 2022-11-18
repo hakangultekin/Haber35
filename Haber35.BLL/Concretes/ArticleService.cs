@@ -135,6 +135,7 @@ namespace Haber35.BLL.Concretes
                 selector: x => new ArticleDTO
                 {
                     Id = x.Id,
+                    AuthorUserName = x.CreatorUser.UserName,
                     Content = x.Content,
                     CreatedDate = x.CreatedDate,
                     ImagePath = x.ImagePath,
@@ -142,7 +143,7 @@ namespace Haber35.BLL.Concretes
                     Viewer = x.Viewer,
                     Categories = _mapper.Map<List<CategoryDTO>>(x.Categories),
                 },
-                includes: x => x.Include(c => c.Categories),
+                includes: x => x.Include(c => c.Categories).Include(c => c.CreatorUser),
                 expression: x => x.Status == true,
                 orderBy: x => x.OrderByDescending(a => a.Viewer),
                 limit : 20
@@ -156,6 +157,7 @@ namespace Haber35.BLL.Concretes
                 selector: x => new ArticleDTO
                 {
                     Id = x.Id,
+                    AuthorUserName = x.CreatorUser.UserName,
                     Content = x.Content,
                     CreatedDate = x.CreatedDate,
                     ImagePath = x.ImagePath,
@@ -163,7 +165,7 @@ namespace Haber35.BLL.Concretes
                     Viewer = x.Viewer,
                     Categories = _mapper.Map<List<CategoryDTO>>(x.Categories),
                 },
-                includes: x => x.Include(c => c.Categories),
+                includes: x => x.Include(c => c.Categories).Include(c => c.CreatorUser),
                 expression: x => x.Status == true,
                 orderBy: x => x.OrderByDescending(a => a.CreatedDate),
                 limit: 20

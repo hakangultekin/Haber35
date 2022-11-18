@@ -1,7 +1,12 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using AutoMapper;
+using Haber35.BLL.Abstracts;
+using Haber35.BLL.DTOs;
 using Haber35.CORE.Concretes;
 using Haber35.UI.Models;
 using Haber35.UI.Models.VMs;
+using Haber35.UI.Models.VMs.Article;
+using Haber35.UI.Models.VMs.Home;
 using Haber35.UI.Utils;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -20,23 +25,49 @@ namespace Haber35.UI.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IArticleService _articleService;
+        private readonly ICategoryService _categoryService;
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
+        private readonly IMapper _mapper;
         private readonly INotyfService _notifyService;
         private readonly ClaimService claimService;
 
-        public HomeController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, INotyfService notifyService)
+        public HomeController(IArticleService articleService, ICategoryService categoryService ,UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IMapper mapper, INotyfService notifyService)
         {
+            _articleService = articleService;
+            _categoryService = categoryService;
             _userManager = userManager;
             _signInManager = signInManager;
+            _mapper = mapper;
             _notifyService = notifyService;
             claimService = new ClaimService(userManager);
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            IndexVM vm = new()
+            {
+                Populars = _mapper.Map<List<ArticleVM>>(await _articleService.GetPopularArticles()),
+                Recents = _mapper.Map<List<ArticleVM>>(await _articleService.GetRecentArticles())
+            };
+
+            return View(vm);
         }
+
+        public async Task<IActionResult> CategoryArticles(Guid id)
+        {
+            CategoryDTO cat = await _categoryService.GetByIdAsync(id);
+            if (cat == null)
+            {
+                _notifyService.Error("Kategori bulunamadı !");
+                return RedirectToAction("Index");
+            }
+
+            ViewBag.Category = cat.CategoryName;
+            return View(_mapper.Map<IEnumerable<CategoryArticlesVM>>(await _articleService.GetArticlesByCategory(cat.Id)));
+        }
+
 
         [HttpGet]
         public IActionResult Login()
@@ -78,7 +109,7 @@ namespace Haber35.UI.Controllers
             }
 
             _notifyService.Success($"Hoşgeldiniz : {user.UserName}");
-            return RedirectToAction(controllerName: "Admin", actionName: "Index");
+            return RedirectToAction(controllerName: "Home", actionName: "Index");
         }
 
         

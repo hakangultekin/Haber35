@@ -1,8 +1,425 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using Haber35.UI.Models.VMs.Home
+@model IndexVM
+
+@{
+    ViewData["Title"] = "Ana Sayfa";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+
+<!-- Popular news -->
+<section>
+    <!-- Popular news  header-->
+    <div class="popular__news-header">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-8 ">
+                    <div class="card__post-carousel">
+                        <!-- Post Articles -->
+                        @for (var i = 0; i < 2; i++)
+                        {
+                            <div class="item">
+                                <div class="card__post">
+                                    <div class="card__post__body">
+                                        <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[i].Id">
+                                            <img src="@Model.Populars[i].ImagePath" class="img-fluid" alt="">
+                                        </a>
+                                        <div class="card__post__content bg__post-cover">
+                                            <div class="card__post__category">
+                                                @(string.Join(',', @Model.Populars[i].Categories.Select(x => x.CategoryName)))
+                                            </div>
+                                            <div class="card__post__title">
+                                                <h2>
+                                                    <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[i].Id">
+                                                        @Model.Populars[i].ShortTitle
+                                                    </a>
+                                                </h2>
+                                            </div>
+                                            <div class="card__post__author-info">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <span>@Model.Populars[i].AuthorUserName</span>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <span>
+                                                            @Model.Populars[i].CreatedDate.ToString("dd-MM-yyyy")
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="popular__news-right">
+
+                        @for (var j = 2; j < 4; j++)
+                        {
+                            <!-- Post Article -->
+                            <div class="card__post ">
+                                <div class="card__post__body card__post__transition">
+                                    <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[j].Id">
+                                        <img src="@Model.Populars[j].ImagePath" class="img-fluid" alt="">
+                                    </a>
+                                    <div class="card__post__content bg__post-cover">
+                                        <div class="card__post__category">
+                                            @(string.Join(',', @Model.Populars[j].Categories.Select(x => x.CategoryName)))
+                                        </div>
+                                        <div class="card__post__title">
+                                            <h5>
+                                                <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[j].Id">
+                                                    @Model.Populars[j].ShortTitle
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div class="card__post__author-info">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[j].Id">
+                                                        @Model.Populars[j].AuthorUserName
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <span>
+                                                        @Model.Populars[j].CreatedDate.ToString("dd-MM-yyyy")
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Popular news header-->
+    <!-- Popular news carousel -->
+    <div class="popular__news-header-carousel">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top__news__slider">
+
+                        @for (var i = 4; i < 9; i++)
+                        {
+                            <div class="item">
+                                <!-- Post Article -->
+                            <div class="article__entry">
+                                    <div class="article__image">
+                                        <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[i].Id">
+                                            <img src="@Model.Populars[i].ImagePath" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="article__content">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <span class="text-primary">
+                                                    @Model.Populars[i].AuthorUserName
+                                                </span>
+                                            </li>
+
+                                            <li class="list-inline-item">
+                                                <span>
+                                                    @Model.Populars[i].CreatedDate.ToString("dd-MM-yyyy")
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <h5>
+                                            <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[i].Id">
+                                                @Model.Populars[i].ShortTitle
+                                            </a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Popular news carousel -->
+</section>
+<!-- End Popular news -->
+
+<section class="pt-0">
+    <div class="popular__section-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <div class="wrapper__list__article">
+                        <h4 class="border_section">En Yeniler</h4>
+                    </div>
+
+                    <div class="row">
+                        @for (var i = 0; i < 2; i++)
+                        {
+                            <div class="col-sm-12 col-md-6 mb-4">
+                                <!-- Post Article -->
+                            <div class="card__post ">
+                                    <div class="card__post__body card__post__transition">
+                                        <a asp-action="ArticleDetail" asp-route-id="@Model.Recents[i].Id">
+                                            <img src="@Model.Recents[i].ImagePath" class="img-fluid" alt="">
+                                        </a>
+                                        <div class="card__post__content bg__post-cover">
+                                            <div class="card__post__category">
+                                                @(string.Join(',', @Model.Recents[i].Categories.Select(x => x.CategoryName)))
+                                            </div>
+                                            <div class="card__post__title">
+                                                <h5>
+                                                    <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[i].Id">
+                                                        @Model.Populars[i].ShortTitle
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div class="card__post__author-info">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a asp-action="ArticleDetail" asp-route-id="@Model.Recents[i].Id">
+                                                            @Model.Recents[i].AuthorUserName
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <span>
+                                                            @Model.Recents[i].CreatedDate.ToString("dd-MM-yyyy")
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="wrapp__list__article-responsive">
+                                <div class="mb-3">
+                                    <!-- Post Article -->
+                                    <div class="card__post card__post-list">
+                                        <div class="image-sm">
+                                            <a asp-action="ArticleDetail" asp-route-id="@Model.Recents[2].Id">
+                                                <img src="@Model.Recents[2].ImagePath" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+
+
+                                        <div class="card__post__body ">
+                                            <div class="card__post__content">
+
+                                                <div class="card__post__author-info mb-2">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item">
+                                                            <span class="text-primary">
+                                                                @Model.Recents[2].AuthorUserName
+                                                            </span>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <span class="text-dark text-capitalize">
+                                                                @Model.Recents[2].CreatedDate.ToString("dd-MM-yyyy")
+                                                            </span>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="card__post__title">
+                                                    <h6>
+                                                        <a asp-action="ArticleDetail" asp-route-id="@Model.Recents[2].Id">
+                                                            @Model.Recents[2].ShortTitle
+                                                        </a>
+                                                    </h6>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <!-- Post Article -->
+                                    <div class="card__post card__post-list">
+                                        <div class="image-sm">
+                                            <a asp-action="ArticleDetail" asp-route-id="@Model.Recents[3].Id">
+                                                <img src="@Model.Recents[3].ImagePath" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+
+
+                                        <div class="card__post__body ">
+                                            <div class="card__post__content">
+
+                                                <div class="card__post__author-info mb-2">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item">
+                                                            <span class="text-primary">
+                                                                @Model.Recents[3].AuthorUserName
+                                                            </span>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <span class="text-dark text-capitalize">
+                                                                @Model.Recents[3].CreatedDate.ToString("dd-MM-yyyy")
+                                                            </span>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="card__post__title">
+                                                    <h6>
+                                                        <a asp-action="ArticleDetail" asp-route-id="@Model.Recents[3].Id">
+                                                            @Model.Recents[3].ShortTitle
+                                                        </a>
+                                                    </h6>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="wrapp__list__article-responsive">
+                                <div class="mb-3">
+                                    <!-- Post Article -->
+                                    <div class="card__post card__post-list">
+                                        <div class="image-sm">
+                                            <a asp-action="ArticleDetail" asp-route-id="@Model.Recents[4].Id">
+                                                <img src="@Model.Recents[4].ImagePath" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+
+
+                                        <div class="card__post__body ">
+                                            <div class="card__post__content">
+
+                                                <div class="card__post__author-info mb-2">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item">
+                                                            <span class="text-primary">
+                                                                @Model.Recents[4].AuthorUserName
+                                                            </span>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <span class="text-dark text-capitalize">
+                                                                @Model.Recents[4].CreatedDate.ToString("dd-MM-yyyy")
+                                                            </span>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="card__post__title">
+                                                    <h6>
+                                                        <a asp-action="ArticleDetail" asp-route-id="@Model.Recents[4].Id">
+                                                            @Model.Recents[4].ShortTitle
+                                                        </a>
+                                                    </h6>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <!-- Post Article -->
+                                    <div class="card__post card__post-list">
+                                        <div class="image-sm">
+                                            <a asp-action="ArticleDetail" asp-route-id="@Model.Recents[5].Id">
+                                                <img src="@Model.Recents[5].ImagePath" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+
+
+                                        <div class="card__post__body ">
+                                            <div class="card__post__content">
+
+                                                <div class="card__post__author-info mb-2">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item">
+                                                            <span class="text-primary">
+                                                                @Model.Recents[5].AuthorUserName
+                                                            </span>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <span class="text-dark text-capitalize">
+                                                                @Model.Recents[5].CreatedDate.ToString("dd-MM-yyyy")
+                                                            </span>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="card__post__title">
+                                                    <h6>
+                                                        <a asp-action="ArticleDetail" asp-route-id="@Model.Recents[5].Id">
+                                                            @Model.Recents[5].ShortTitle
+                                                        </a>
+                                                    </h6>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <aside class="wrapper__list__article">
+                        <h4 class="border_section">Popüler Haberler</h4>
+                        <div class="wrapper__list-number">
+
+                            @for (var i = 0; i < 4; i++)
+                            {
+                                <!-- List Article -->
+                                <div class="card__post__list">
+                                    <div class="list-number">
+                                        <span>
+                                            @(i+1)
+                                        </span>
+                                    </div>
+                                    <a href="#" class="category">
+                                        @(string.Join(',', @Model.Populars[i].Categories.Select(x => x.CategoryName)))
+                                    </a>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+
+                                            <h5>
+                                                <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[i].Id">
+                                                    @Model.Populars[i].ShortTitle
+                                                </a>
+                                            </h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            }
+
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  0
