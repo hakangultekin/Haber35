@@ -11,6 +11,6 @@ namespace Haber35.CORE.Interfaces
     {
         public string CreatorUserId { get; set; }
         public AppUser CreatorUser { get; set; }
-        public DateTime? CreatedDate { get; set; }
+        public DateTime CreatedDate { get; set; }
     }
 }

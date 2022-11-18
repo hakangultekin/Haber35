@@ -1,4 +1,5 @@
-﻿using Haber35.CORE.Interfaces;
+﻿using Haber35.CORE.Entities.Interfaces;
+using Haber35.CORE.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Haber35.CORE.Concretes
 {
-    public class AppUser : IdentityUser
+    public class AppUser : IdentityUser, IBaseEntity
     {
         public AppUser()
         {
@@ -27,5 +28,10 @@ namespace Haber35.CORE.Concretes
 
         public ICollection<Article> Articles { get; set; }
         public ICollection<Category> Categories { get; set; }
+
+        public string ModifierUserId { get; set; }
+        public DateTime? ModifiedDate { get; set; }
+        public string DeletoryUserId { get; set; }
+        public DateTime? DeletedDate { get; set; }
     }
 }

@@ -1,0 +1,81 @@
+﻿@using Haber35.UI.Models.VMs.Article
+@model IEnumerable<ArticleListVM>
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<!-- Page-Title -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-title-box">
+            <div class="row">
+                <div class="col">
+                    <h4 class="page-title">Haber Listesi</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Anasayfa</a></li>
+                        <li class="breadcrumb-item active">Haber Listesi</li>
+                    </ol>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end page-title-box-->
+    </div><!--end col-->
+</div><!--end row-->
+<!-- end page title end breadcrumb -->
+
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex flex-row-reverse">
+                    <a class="btn btn-success my-2 waves-effect waves-light" asp-controller="Article" asp-action="Create">Yeni Haber Oluştur</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered mb-0 table-centered">
+                        <thead>
+                            <tr>
+                                <th>Görsel</th>
+                                <th>Tarih</th>
+                                <th>Gösterim</th>
+                                <th>Başlık</th>
+                                <th>İçerik</th>
+                                <th>Kategoriler</th>
+                                <th>İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td><img src="@item.ImagePath" alt="img" class="thumb-xxl rounded"></td>
+                                    <td>@item.CreatedDate.ToString("dd-MM-yyyy")</td>
+                                    <td>@item.Viewer</td>
+                                    <td>@item.Title</td>
+                                    @if(item.Content.Length > 50){
+                                        <td>@(item.Content.Substring(0,50))...</td>
+                                    }
+                                    else
+                                    {
+                                        <td>@item.Content</td>
+                                    }
+
+                                    
+                                    <td>@item.GetCategoriesString</td>
+                                    <td>
+                                        <a class="btn btn-sm btn-soft-success btn-circle mr-2" asp-controller="Article" asp-action="Update" asp-route-id="@item.Id"><i class="dripicons-pencil"></i></a>
+                                        <a class="btn btn-sm btn-soft-danger btn-circle" asp-controller="Article" asp-action="Delete" asp-route-id="@item.Id"><i class="dripicons-trash" aria-hidden="true"></i></a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table><!--end /table-->
+                </div><!--end /tableresponsive-->
+            </div><!--end card-body-->
+        </div><!--end card-->
+    </div>
+</div>

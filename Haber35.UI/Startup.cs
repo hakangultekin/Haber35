@@ -2,9 +2,15 @@ using AspNetCoreHero.ToastNotification;
 using AspNetCoreHero.ToastNotification.Extensions;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Haber35.BLL.Abstracts;
+using Haber35.BLL.AutoMapper;
+using Haber35.BLL.Concretes;
 using Haber35.BLL.Validators;
 using Haber35.CORE.Concretes;
+using Haber35.CORE.IRepositories;
 using Haber35.DAL;
+using Haber35.DAL.Repositories;
+using Haber35.UI.Profiles;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -51,6 +57,21 @@ namespace Haber35.UI
             .AddTokenProvider<DataProtectorTokenProvider<AppUser>>(TokenOptions.DefaultProvider)
             .AddErrorDescriber<CustomIdentityErrorDescriber>()
             .AddEntityFrameworkStores<AppDbContext>();
+
+            // Adding
+            services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+            services.AddTransient<IArticleRepository, ArticleRepository>();
+            services.AddTransient<IAppUserRepository, AppUserRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<ICommentRepository, CommentRepository>();
+            services.AddScoped<IAppUserService, AppUserService>();
+            services.AddScoped<IArticleService, ArticleService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<ICommentService, CommentService>();
+
+            //AutoMapper
+            services.AddAutoMapper(typeof(Mappings), typeof(AdminProfiles));
+
 
             // Cookie options
             services.ConfigureApplicationCookie(option =>

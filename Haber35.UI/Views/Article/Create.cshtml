@@ -1,0 +1,108 @@
+﻿@using Haber35.UI.Models.VMs.Article
+@model ArticleCreateVM
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!-- Page-Title -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-title-box">
+            <div class="row">
+                <div class="col">
+                    <h4 class="page-title">Haber Oluştur</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Anasayfa</a></li>
+                        <li class="breadcrumb-item active">Haber Oluştur</li>
+                    </ol>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end page-title-box-->
+    </div><!--end col-->
+</div><!--end row-->
+<!-- end page title end breadcrumb -->
+
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <form asp-action="Create" method="post" enctype="multipart/form-data" autocomplete="off">
+
+                    <div class="form-group">
+                        <label>Haber Resmi Seç</label><br />
+
+                        <div class="dastyle-profile-main-pic">
+                            <img src="/Images/Users/account-add-photo.svg" alt="article-pic" height="128" width="128" class="rounded" style="object-fit:contain;" id="output">
+                            <input type="file" accept="image/*" class="btn btn-dark ml-4" asp-for="UploadImage" value="Fotoğraf Seç" onchange="loadFile(event)" />
+                            <span class="text-danger" asp-validation-for="UploadImage"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col col-xl-12 col-md-12">
+                            <label asp-for="Title">Haber Başlığı</label>
+                            <input type="text" asp-for="Title" class="form-control" placeholder="Haber Başlığı" autocomplete="off" />
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col col-xl-12 col-md-12">
+                            <label asp-for="Content">Açıklama</label>
+                            <textarea asp-for="Content" rows="5" class="form-control" placeholder="" autocomplete="off"></textarea>
+                            <span asp-validation-for="Content" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h5>Kategori Seçin:</h5>
+                        <div class="form-group row">
+                            @foreach (var item in ViewBag.Categories)
+                            {
+                                <div class="checkbox checkbox-primary mx-2">
+                                    <input id="@item.Id" name="SelectedCategoriesIDs" value="@item.Id" type="checkbox">
+                                    <label for="@item.Id">
+                                        @item.CategoryName
+                                    </label>
+                                </div>
+                            }
+                        </div>
+                        <span class="text-danger" asp-validation-for="SelectedCategoriesIDs"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="mdi mdi-launch"></i> Haber Oluştur
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+<script src="~/assets/vendor/lightpick.js"></script>
+<script>
+    new Lightpick({
+      field: document.getElementById('light_datepick'),
+      inline: true,
+    });
+
+</script>
+
+<script>
+        // Upload Edilen Dosya Önizlemesi
+        let loadFile = function (event) {
+        let reader = new FileReader();
+        reader.onload = function () {
+            let output = document.getElementById('output');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    };
+</script>
+}

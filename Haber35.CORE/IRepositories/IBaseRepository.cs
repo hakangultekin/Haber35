@@ -10,9 +10,9 @@ namespace Haber35.CORE.IRepositories
 {
     public interface IBaseRepository<T> where T : class
     {
-        Task<bool> Create(T entity);
-        bool Update(T entity);
-        void Delete(T entity);
+        Task<bool> CreateAsync(T entity);
+        Task<bool> UpdateAsync(T entity);
+        Task<bool> DeleteAsync(T entity);
 
         Task<bool> Any(Expression<Func<T, bool>> expression);
         Task<T> GetWhere(Expression<Func<T, bool>> expression);
@@ -30,6 +30,7 @@ namespace Haber35.CORE.IRepositories
             Expression<Func<T, TResult>> selector,
             Expression<Func<T, bool>> expression,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
-            Func<IQueryable<T>, IIncludableQueryable<T, object>> includes = null);
+            Func<IQueryable<T>, IIncludableQueryable<T, object>> includes = null,
+            int limit = 0);
     }
 }

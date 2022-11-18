@@ -1,0 +1,65 @@
+﻿@using Haber35.UI.Models.VMs.Category
+@model IEnumerable<PassiveCategoryListVM>
+
+@{
+    ViewData["Title"] = "Pasif Kategori Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<!-- Page-Title -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-title-box">
+            <div class="row">
+                <div class="col">
+                    <h4 class="page-title">Pasif Kategori Listesi</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Anasayfa</a></li>
+                        <li class="breadcrumb-item active">Pasif Kategori Listesi</li>
+                    </ol>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end page-title-box-->
+    </div><!--end col-->
+</div><!--end row-->
+<!-- end page title end breadcrumb -->
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex flex-row-reverse">
+                    <a class="btn btn-success my-2 waves-effect waves-light" asp-controller="Category" asp-action="Create">Yeni Kategori Oluştur</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered mb-0 table-centered">
+                        <thead>
+                            <tr>
+                                <th style="width:200px">Oluşturulma Tarihi</th>
+                                <th style="width:200px">Değiştirilme Tarihi</th>
+                                <th>Kategori Adı</th>
+                                <th style="width:200px">İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.CreatedDate.ToString("dd-MM-yyyy")</td>
+                                    <td>@item.ModifiedDate.ToString("dd-MM-yyyy")</td>
+                                    <td>@item.CategoryName</td>
+                                    <td>
+                                        <a class="btn btn-sm btn-success btn-circle mr-2" asp-controller="Category" asp-action="Active" asp-route-id="@item.Id"><i class="dripicons-plus"></i>Aktifleştir</a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table><!--end /table-->
+                </div><!--end /tableresponsive-->
+            </div><!--end card-body-->
+        </div><!--end card-->
+    </div>
+</div>

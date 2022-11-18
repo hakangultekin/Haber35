@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Haber35.CORE.Concretes
 {
-    public class Article : BaseEntity
+    public class Article : BaseEntity, ICreateable
     {
         public Article()
         {
@@ -17,6 +17,7 @@ namespace Haber35.CORE.Concretes
             Id = Guid.NewGuid();
         }
 
+        public Guid Id { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
         public string ImagePath { get; set; }
@@ -42,5 +43,9 @@ namespace Haber35.CORE.Concretes
 
         public ICollection<Category> Categories { get; set; }
         public ICollection<Comment> Comments { get; set; }
+
+        public string CreatorUserId { get; set; }
+        public AppUser CreatorUser { get; set; }
+        public DateTime CreatedDate { get; set; } = DateTime.Now;
     }
 }
