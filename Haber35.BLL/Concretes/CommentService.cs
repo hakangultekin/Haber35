@@ -45,7 +45,7 @@ namespace Haber35.BLL.Concretes
                     CreatedDate = x.CreatedDate,
                     Description = x.Description,
                     Title = x.Title,
-                    UserName = x.UserName,
+                    UserName = x.Name,
                 },
                 expression: x => x.Id == id
                 );
@@ -62,7 +62,7 @@ namespace Haber35.BLL.Concretes
                     CreatedDate = x.CreatedDate,
                     Description = x.Description,
                     Title = x.Title,
-                    UserName = x.UserName,
+                    UserName = x.Name,
                 },
                 expression: x => x.Status == false && x.ArticleId == id,
                 orderBy: x => x.OrderByDescending(a => a.CreatedDate)
