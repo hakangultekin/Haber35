@@ -34,26 +34,9 @@ namespace Haber35.UI.Models.VMs.Article
             }
         }
 
-        public string ShortTitle
-        {
-            get
-            {
-                if (Title.Length > 50)
-                    return Title.Substring(0, 50) + "...";
-                else
-                    return Title;
-            }
-        }
+        public string ShortTitle { get => Title.Length > 50 ? Title.Substring(0, 50) + "..." : Title; }
 
-        public string ShortContent {
-            get
-            {
-                if (Content.Length > 150)
-                    return Content.Substring(0, 150) + "...";
-                else
-                    return Content;
-            }
-        }
+        public string ShortContent { get => Content.Length > 150 ? Content.Substring(0, 150) + "..." : Content; }
 
         public DateTime CreatedDate { get; set; }
         public List<CategoryDTO> Categories = new List<CategoryDTO>();

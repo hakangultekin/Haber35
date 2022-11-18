@@ -34,12 +34,7 @@ namespace Haber35.UI.Models.VMs.Home
             }
         }
 
-        public string ShortTitle { get {
-                if (Title.Length > 50)
-                    return Title.Substring(0, 50) + "...";
-                else
-                    return Title;
-            } }
+        public string ShortTitle { get => Title.Length > 50 ? Title.Substring(0, 50) + "..." : Title; }
 
         public DateTime CreatedDate { get; set; }
         public List<CategoryDTO> Categories = new List<CategoryDTO>();
