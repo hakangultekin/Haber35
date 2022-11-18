@@ -49,6 +49,7 @@
                                     <td>@item.CreatedDate.ToString("dd-MM-yyyy")</td>
                                     <td>@item.CategoryName</td>
                                     <td>
+                                        <a class="btn btn-sm btn-soft-primary waves-effect waves-light mr-2" asp-controller="Article" asp-action="GetByCategory" asp-route-catgoryId="@item.Id"><i class="dripicons-list"></i> Listele</a>
                                         <a class="btn btn-sm btn-soft-success btn-circle mr-2" asp-controller="Category" asp-action="Update" asp-route-id="@item.Id"><i class="dripicons-pencil"></i></a>
                                         <a class="btn btn-sm btn-soft-danger btn-circle" asp-controller="Category" asp-action="Delete" asp-route-id="@item.Id"><i class="dripicons-trash" aria-hidden="true"></i></a>
                                     </td>

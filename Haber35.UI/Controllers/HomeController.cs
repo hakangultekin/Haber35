@@ -133,7 +133,6 @@ namespace Haber35.UI.Controllers
             return View(model);
         }
 
-
         public async Task<IActionResult> LogOut()
         {
             AppUser user = await _userManager.GetUserAsync(User);
@@ -145,7 +144,6 @@ namespace Haber35.UI.Controllers
             await _signInManager.SignOutAsync();
             return View("Login");
         }
-
 
         private void LogResultErrors(IdentityResult result)
         {

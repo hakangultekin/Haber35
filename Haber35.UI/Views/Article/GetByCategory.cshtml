@@ -2,7 +2,7 @@
 @model IEnumerable<ArticleListVM>
 
 @{
-    ViewData["Title"] = "Haber Listesi";
+    ViewData["Title"] = $"{ViewBag.Category} Konulu Haber Listesi";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -14,7 +14,7 @@
         <div class="page-title-box">
             <div class="row">
                 <div class="col">
-                    <h4 class="page-title">Haber Listesi</h4>
+                    <h4 class="page-title">@(ViewBag.Category) Konulu Haber Listesi</h4>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Anasayfa</a></li>
                         <li class="breadcrumb-item active">Haber Listesi</li>

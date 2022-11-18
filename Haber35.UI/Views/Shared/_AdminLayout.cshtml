@@ -46,6 +46,13 @@
                     <a asp-controller="Admin" asp-action="Index"> <i data-feather="home" class="align-self-center menu-icon"></i><span>Anasayfa</span></a>
                 </li>
 
+                <li>
+                    <a asp-controller="Admin" asp-action="Update"> <i data-feather="user" class="align-self-center menu-icon"></i><span>Profil Güncelle</span></a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="ChangePassword"> <i data-feather="lock" class="align-self-center menu-icon"></i><span>Şifre Değiştir</span></a>
+                </li>
+
                  <li>
                     <a href="javascript: void(0);"><i data-feather="grid" class="align-self-center menu-icon"></i><span>Haber İşlemleri</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                     <ul class="nav-second-level" aria-expanded="false">
@@ -94,8 +101,8 @@
                             <img src="@User.Claims.First(z => z.Type == "ImagePath").Value" alt="profile-user" class="rounded-circle" />
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" asp-controller="Personel" asp-action="Index"><i data-feather="user" class="align-self-center icon-xs icon-dual mr-1"></i> Hesabım</a>
-                            <a class="dropdown-item" href="#"><i data-feather="settings" class="align-self-center icon-xs icon-dual mr-1"></i> Ayarlar</a>
+                            <a class="dropdown-item" asp-controller="Admin" asp-action="Update"><i data-feather="user" class="align-self-center icon-xs icon-dual mr-1"></i> Profil Güncelle</a>
+                            <a class="dropdown-item" asp-controller="Admin" asp-action="ChangePassword"><i data-feather="lock" class="align-self-center icon-xs icon-dual mr-1"></i> Şifre Değiştir</a>
                             <div class="dropdown-divider mb-0"></div>
                             <a class="dropdown-item" asp-controller="Home" asp-action="LogOut"><i data-feather="power" class="align-self-center icon-xs icon-dual mr-1"></i> Çıkış</a>
                         </div>

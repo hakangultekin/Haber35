@@ -1,0 +1,121 @@
+﻿@using Haber35.UI.Models.VMs.Admin
+@model AdminUpdateVM
+@{
+    ViewData["Title"] = "Admin Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<!--Page-Title -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-title-box">
+            <div class="row">
+                <div class="col">
+                    <h4 class="page-title">Bilgi Güncelle</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Anasayfa</a></li>
+                        <li class="breadcrumb-item active">Bilgi Güncelle</li>
+                    </ol>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end page-title-box-->
+    </div><!--end col-->
+</div><!--end row-->
+<!-- end page title end breadcrumb -->
+
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <form asp-action="Update" method="post" enctype="multipart/form-data" autocomplete="off">
+                    <div class="form-group">
+                        <label>Profil Resmi Seç</label><br />
+
+                        <div class="dastyle-profile-main-pic">
+                            <img src="@Model.ImagePath" alt="article-pic" height="128" width="128" class="rounded" style="object-fit:contain;" id="output">
+                            <input type="file" accept="image/*" class="btn btn-dark ml-4" asp-for="UploadImage" value="Fotoğraf Seç" onchange="loadFile(event)" />
+                            <span class="text-danger" asp-validation-for="UploadImage"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col col-xl-12 col-md-12">
+                            <label asp-for="Email">Email Adresi</label>
+                            <input type="text" asp-for="Email" class="form-control" placeholder="Email Adresi" autocomplete="off" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col col-xl-12 col-md-12">
+                            <label asp-for="UserName">Kullanıcı Adı</label>
+                            <input type="text" asp-for="UserName" class="form-control" placeholder="Kullanıcı Adı" autocomplete="off" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col col-xl-6 col-md-6">
+                            <label asp-for="FirstName">İsim</label>
+                            <input type="text" asp-for="FirstName" class="form-control" placeholder="İsim" autocomplete="off" />
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+
+                        <div class="col col-xl-6 col-md-6">
+                            <label asp-for="LastName">Soyisim</label>
+                            <input type="text" asp-for="LastName" class="form-control" placeholder="Soyisim" autocomplete="off" />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col col-xl-12 col-md-12">
+                            <label asp-for="PhoneNumber">Telefon Numarası</label>
+                            <input type="text" asp-for="PhoneNumber" class="form-control" placeholder="Telefon Numarası" autocomplete="off" />
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col col-xl-12 col-md-12">
+                            <label asp-for="Adress">Adres</label>
+                            <textarea asp-for="Adress" rows="3" class="form-control" placeholder="Adres" autocomplete="off"></textarea>
+                            <span asp-validation-for="Adress" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="mdi mdi-launch"></i> Bilgi Güncelle
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+<script src="~/assets/vendor/lightpick.js"></script>
+<script>
+    new Lightpick({
+      field: document.getElementById('light_datepick'),
+      inline: true,
+    });
+
+</script>
+
+<script>
+        // Upload Edilen Dosya Önizlemesi
+        let loadFile = function (event) {
+        let reader = new FileReader();
+        reader.onload = function () {
+            let output = document.getElementById('output');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    };
+</script>
+}

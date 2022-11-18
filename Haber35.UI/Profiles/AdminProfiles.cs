@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Haber35.BLL.DTOs;
+using Haber35.CORE.Concretes;
 using Haber35.UI.Models.VMs.Admin;
 using Haber35.UI.Models.VMs.Article;
 using Haber35.UI.Models.VMs.Category;
@@ -16,6 +17,8 @@ namespace Haber35.UI.Profiles
     {
         public AdminProfiles()
         {
+            CreateMap<AppUser, AdminUpdateVM>().ReverseMap().ForMember("ImagePath", x => x.Ignore());
+
             CreateMap<ArticleDTO, IndexVM>();
             CreateMap<ArticleDTO, ArticleListVM>();
             CreateMap<ArticleDTO, ArticleUpdateVM>();

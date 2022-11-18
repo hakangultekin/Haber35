@@ -14,7 +14,7 @@ namespace Haber35.DAL.SeedData
         public static void Seed(this ModelBuilder builder)
         {
             //şifre H1234
-            AppUser user = new AppUser { Id = "05fcadae-fa72-4a86-89ee-2a4943ad265d", FirstName = "Hakan", LastName = "Gültekin", UserName = "hgultekin", NormalizedUserName = "HGULTEKIN", Email = "hakan35@hotmail.it", NormalizedEmail = "HAKAN35@HOTMAIL.IT", EmailConfirmed = true, BirthDate = new DateTime(1995, 08, 03), CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now, PasswordHash = "AQAAAAEAACcQAAAAEKpyrdvmsPkODSCAljhCSJMJlvzQ/Mrbvkhxm4RP1kbHKFepD7AUAIs96OG40roakw==", SecurityStamp = "YFZSZFREU2D5QIXVH5AISZMENKE76MLB", ConcurrencyStamp = "d3ebae65-8fca-4b48-a673-149ea670d8c8", ImagePath = "/Images/Profile/05fcadae-fa72-4a86-89ee-2a4943ad265d.jpg", Adress
+            AppUser user = new AppUser { Id = "05fcadae-fa72-4a86-89ee-2a4943ad265d", FirstName = "Hakan", LastName = "Gültekin", UserName = "hgultekin", NormalizedUserName = "HGULTEKIN", Email = "hakan35@hotmail.it", NormalizedEmail = "HAKAN35@HOTMAIL.IT", EmailConfirmed = true, BirthDate = new DateTime(1995, 08, 03), CreatedDate = DateTime.Now, UpdatedDate = DateTime.Now, PasswordHash = "AQAAAAEAACcQAAAAEKpyrdvmsPkODSCAljhCSJMJlvzQ/Mrbvkhxm4RP1kbHKFepD7AUAIs96OG40roakw==", SecurityStamp = "YFZSZFREU2D5QIXVH5AISZMENKE76MLB", ConcurrencyStamp = "d3ebae65-8fca-4b48-a673-149ea670d8c8", ImagePath = "/Images/Users/05fcadae-fa72-4a86-89ee-2a4943ad265d.jpg", Adress
             = "Teleferik mahallesi Balçova/İzmir"};
             builder.Entity<AppUser>().HasData(user);
 
