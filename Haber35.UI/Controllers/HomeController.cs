@@ -68,6 +68,11 @@ namespace Haber35.UI.Controllers
             return View(_mapper.Map<IEnumerable<CategoryArticlesVM>>(await _articleService.GetArticlesByCategory(cat.Id)));
         }
 
+        public IActionResult ArticleDetail(Guid id)
+        {
+            return View();
+        }
+
 
         [HttpGet]
         public IActionResult Login()
@@ -171,9 +176,8 @@ namespace Haber35.UI.Controllers
             if (user == null) return View("Login");
 
             await claimService.RemoveClaims(user);
-            //await userManager.RemoveClaimsAsync(personel, User.Claims);
             await _signInManager.SignOutAsync();
-            return View("Login");
+            return View("Index");
         }
 
         private void LogResultErrors(IdentityResult result)

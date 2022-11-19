@@ -3,6 +3,34 @@
 
 <header class="bg-light">
     <!-- Navbar  -->
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="topbar d-none d-sm-block">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                        <div class="topbar-left">
+                            <div class="topbar-text">
+                                Hoşgeldiniz <span style="color:#950711">@User.Identity.Name</span> - @DateTime.Now.ToString("dd.MM.yyyy")
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                        <div class="list-unstyled topbar-right">
+                            <ul class="topbar-link">
+                                <li><a asp-controller="Admin" asp-action="Index">Yönetim Paneli</a></li>
+                                <li><a asp-action="LogOut">Çıkış Yap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    
+
+
     <!-- Navbar menu  -->
     <div class="navigation-wrap navigation-shadow bg-white">
         <nav class="navbar navbar-hover navbar-expand-lg navbar-soft">
@@ -36,10 +64,6 @@
                         {
                             <li class="nav-item"><a style="color:#950711;" class="nav-link" asp-action="Login"> Giriş Yap </a></li>
                             <li class="nav-item"><a style="color:#950711;" class="nav-link" asp-action="Register"> Kayıt Ol </a></li>
-                        }
-                        else
-                        {
-                            <li class="nav-item"><a style="color:#950711;" class="nav-link" asp-controller="Admin" asp-action="Index"> Site Ayarları </a></li>
                         }
                     </ul>
 

@@ -36,238 +36,238 @@ namespace Haber35.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            ArticlesId = new Guid("8f08cfed-784d-4067-9a35-75da130a37a2"),
-                            CategoriesId = new Guid("a5116780-2d20-43e3-afcb-a6817828a114")
+                            ArticlesId = new Guid("da826353-32c1-4767-955d-e6f2a0de9bf7"),
+                            CategoriesId = new Guid("6228ea4c-058c-4fa8-a77c-fcd47382c2f3")
                         },
                         new
                         {
-                            ArticlesId = new Guid("0c9cf8b4-34cc-4c03-b711-9b1f9800e14f"),
-                            CategoriesId = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0")
+                            ArticlesId = new Guid("6d27ffc8-1e75-451a-92ff-5901ac843ed5"),
+                            CategoriesId = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9")
                         },
                         new
                         {
-                            ArticlesId = new Guid("0c9cf8b4-34cc-4c03-b711-9b1f9800e14f"),
-                            CategoriesId = new Guid("11209869-03ad-44e3-9203-df14be8799d7")
+                            ArticlesId = new Guid("6d27ffc8-1e75-451a-92ff-5901ac843ed5"),
+                            CategoriesId = new Guid("b978f48f-8790-4302-92af-5d7e7b98806a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("25abe23e-e706-41a2-bc67-9c0961f26cc1"),
-                            CategoriesId = new Guid("7b598e88-5f2e-4f55-9c4b-528c801ae4f6")
+                            ArticlesId = new Guid("7a14cc15-fe67-445d-a58c-66f45ef183cd"),
+                            CategoriesId = new Guid("7d22d895-23dc-4f8b-8be8-19f1505e3409")
                         },
                         new
                         {
-                            ArticlesId = new Guid("25abe23e-e706-41a2-bc67-9c0961f26cc1"),
-                            CategoriesId = new Guid("31f5da2a-cf15-4281-9231-b9090cfe0700")
+                            ArticlesId = new Guid("7a14cc15-fe67-445d-a58c-66f45ef183cd"),
+                            CategoriesId = new Guid("0fa7e735-4576-4703-9a57-c5e4f5f23988")
                         },
                         new
                         {
-                            ArticlesId = new Guid("3d3e3706-0836-461d-853b-4183d0c83daf"),
-                            CategoriesId = new Guid("3149d32e-e2f7-4ce8-b6fe-b85df4917406")
+                            ArticlesId = new Guid("6d1dc615-162d-412d-8740-656502f26b8c"),
+                            CategoriesId = new Guid("1a45fde8-b211-400e-9af4-2f13e7445cc7")
                         },
                         new
                         {
-                            ArticlesId = new Guid("3d3e3706-0836-461d-853b-4183d0c83daf"),
-                            CategoriesId = new Guid("11209869-03ad-44e3-9203-df14be8799d7")
+                            ArticlesId = new Guid("6d1dc615-162d-412d-8740-656502f26b8c"),
+                            CategoriesId = new Guid("b978f48f-8790-4302-92af-5d7e7b98806a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("5bef0525-9007-47ac-b0b2-1567aef33a34"),
-                            CategoriesId = new Guid("2464302c-deb1-433e-85b7-7d637da7e99c")
+                            ArticlesId = new Guid("771bca6d-1e5a-4bea-a507-b225db4e0f68"),
+                            CategoriesId = new Guid("df8ba537-4b03-4eee-bf2e-f6e161940f1a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("5bef0525-9007-47ac-b0b2-1567aef33a34"),
-                            CategoriesId = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0")
+                            ArticlesId = new Guid("771bca6d-1e5a-4bea-a507-b225db4e0f68"),
+                            CategoriesId = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9")
                         },
                         new
                         {
-                            ArticlesId = new Guid("6e525b81-4f2b-4ad8-b0bc-1278792d4846"),
-                            CategoriesId = new Guid("31f5da2a-cf15-4281-9231-b9090cfe0700")
+                            ArticlesId = new Guid("b313f49a-6dfd-49c8-a6aa-6aa93adba2f6"),
+                            CategoriesId = new Guid("0fa7e735-4576-4703-9a57-c5e4f5f23988")
                         },
                         new
                         {
-                            ArticlesId = new Guid("d5b8ec51-9d20-4276-a609-4b96c7b11a6f"),
-                            CategoriesId = new Guid("31f5da2a-cf15-4281-9231-b9090cfe0700")
+                            ArticlesId = new Guid("d1659c94-953f-4035-94b2-d4fda156b779"),
+                            CategoriesId = new Guid("0fa7e735-4576-4703-9a57-c5e4f5f23988")
                         },
                         new
                         {
-                            ArticlesId = new Guid("d5b8ec51-9d20-4276-a609-4b96c7b11a6f"),
-                            CategoriesId = new Guid("5df5cb60-3b6f-48b7-b3a9-2c9a21b958a8")
+                            ArticlesId = new Guid("d1659c94-953f-4035-94b2-d4fda156b779"),
+                            CategoriesId = new Guid("6c72ca1b-cd2c-413f-b2a3-067a523aecf3")
                         },
                         new
                         {
-                            ArticlesId = new Guid("287f6a42-0de7-4d78-8a4a-02bd057aad40"),
-                            CategoriesId = new Guid("de2fbce7-96a1-48fe-85cf-63a4c2e834f7")
+                            ArticlesId = new Guid("38f5a001-077e-47c0-836b-0750ad77e1d5"),
+                            CategoriesId = new Guid("6733ae52-dba5-4c6d-bf3e-83cee6bbeb32")
                         },
                         new
                         {
-                            ArticlesId = new Guid("d5d282a8-aa5e-4bad-b90b-ccb3a15a8eb2"),
-                            CategoriesId = new Guid("11209869-03ad-44e3-9203-df14be8799d7")
+                            ArticlesId = new Guid("17ae47b6-936b-40ae-ab76-c3f07069abfb"),
+                            CategoriesId = new Guid("b978f48f-8790-4302-92af-5d7e7b98806a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("bd61950f-4bd3-4b67-8fa1-cbf1fceee841"),
-                            CategoriesId = new Guid("11209869-03ad-44e3-9203-df14be8799d7")
+                            ArticlesId = new Guid("38fef9ad-912d-41ee-9d91-b6985be70a8e"),
+                            CategoriesId = new Guid("b978f48f-8790-4302-92af-5d7e7b98806a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("bd61950f-4bd3-4b67-8fa1-cbf1fceee841"),
-                            CategoriesId = new Guid("2464302c-deb1-433e-85b7-7d637da7e99c")
+                            ArticlesId = new Guid("38fef9ad-912d-41ee-9d91-b6985be70a8e"),
+                            CategoriesId = new Guid("df8ba537-4b03-4eee-bf2e-f6e161940f1a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("bd61950f-4bd3-4b67-8fa1-cbf1fceee841"),
-                            CategoriesId = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0")
+                            ArticlesId = new Guid("38fef9ad-912d-41ee-9d91-b6985be70a8e"),
+                            CategoriesId = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9")
                         },
                         new
                         {
-                            ArticlesId = new Guid("5c9efbbb-b536-402c-b817-aedf80864ada"),
-                            CategoriesId = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0")
+                            ArticlesId = new Guid("93c2c7a8-d0a1-4430-85de-442132d4ee7c"),
+                            CategoriesId = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9")
                         },
                         new
                         {
-                            ArticlesId = new Guid("5c9efbbb-b536-402c-b817-aedf80864ada"),
-                            CategoriesId = new Guid("31f5da2a-cf15-4281-9231-b9090cfe0700")
+                            ArticlesId = new Guid("93c2c7a8-d0a1-4430-85de-442132d4ee7c"),
+                            CategoriesId = new Guid("0fa7e735-4576-4703-9a57-c5e4f5f23988")
                         },
                         new
                         {
-                            ArticlesId = new Guid("0ce36fba-a197-4180-83a9-eba10239fb0c"),
-                            CategoriesId = new Guid("31f5da2a-cf15-4281-9231-b9090cfe0700")
+                            ArticlesId = new Guid("de89a8d6-8e56-47c9-98c7-69348778ad84"),
+                            CategoriesId = new Guid("0fa7e735-4576-4703-9a57-c5e4f5f23988")
                         },
                         new
                         {
-                            ArticlesId = new Guid("0ce36fba-a197-4180-83a9-eba10239fb0c"),
-                            CategoriesId = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0")
+                            ArticlesId = new Guid("de89a8d6-8e56-47c9-98c7-69348778ad84"),
+                            CategoriesId = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9")
                         },
                         new
                         {
-                            ArticlesId = new Guid("0ce36fba-a197-4180-83a9-eba10239fb0c"),
-                            CategoriesId = new Guid("a5116780-2d20-43e3-afcb-a6817828a114")
+                            ArticlesId = new Guid("de89a8d6-8e56-47c9-98c7-69348778ad84"),
+                            CategoriesId = new Guid("6228ea4c-058c-4fa8-a77c-fcd47382c2f3")
                         },
                         new
                         {
-                            ArticlesId = new Guid("a46ecd4b-a11c-42a3-b757-c928f8638b2d"),
-                            CategoriesId = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0")
+                            ArticlesId = new Guid("b3df2732-18b2-4349-aa11-e81b6bb0838b"),
+                            CategoriesId = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9")
                         },
                         new
                         {
-                            ArticlesId = new Guid("a46ecd4b-a11c-42a3-b757-c928f8638b2d"),
-                            CategoriesId = new Guid("31f5da2a-cf15-4281-9231-b9090cfe0700")
+                            ArticlesId = new Guid("b3df2732-18b2-4349-aa11-e81b6bb0838b"),
+                            CategoriesId = new Guid("0fa7e735-4576-4703-9a57-c5e4f5f23988")
                         },
                         new
                         {
-                            ArticlesId = new Guid("a46ecd4b-a11c-42a3-b757-c928f8638b2d"),
-                            CategoriesId = new Guid("2464302c-deb1-433e-85b7-7d637da7e99c")
+                            ArticlesId = new Guid("b3df2732-18b2-4349-aa11-e81b6bb0838b"),
+                            CategoriesId = new Guid("df8ba537-4b03-4eee-bf2e-f6e161940f1a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("522db709-ebc0-4879-b368-bd82e850abc7"),
-                            CategoriesId = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0")
+                            ArticlesId = new Guid("d9be1e7f-4a13-4b65-b210-149c3c653147"),
+                            CategoriesId = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9")
                         },
                         new
                         {
-                            ArticlesId = new Guid("522db709-ebc0-4879-b368-bd82e850abc7"),
-                            CategoriesId = new Guid("31f5da2a-cf15-4281-9231-b9090cfe0700")
+                            ArticlesId = new Guid("d9be1e7f-4a13-4b65-b210-149c3c653147"),
+                            CategoriesId = new Guid("0fa7e735-4576-4703-9a57-c5e4f5f23988")
                         },
                         new
                         {
-                            ArticlesId = new Guid("0666819d-d275-4cfa-9cf6-cbdcf92c7bcf"),
-                            CategoriesId = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0")
+                            ArticlesId = new Guid("e0823ad0-7ee1-417c-b8e6-8c716fee8a40"),
+                            CategoriesId = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9")
                         },
                         new
                         {
-                            ArticlesId = new Guid("0666819d-d275-4cfa-9cf6-cbdcf92c7bcf"),
-                            CategoriesId = new Guid("31f5da2a-cf15-4281-9231-b9090cfe0700")
+                            ArticlesId = new Guid("e0823ad0-7ee1-417c-b8e6-8c716fee8a40"),
+                            CategoriesId = new Guid("0fa7e735-4576-4703-9a57-c5e4f5f23988")
                         },
                         new
                         {
-                            ArticlesId = new Guid("0666819d-d275-4cfa-9cf6-cbdcf92c7bcf"),
-                            CategoriesId = new Guid("11209869-03ad-44e3-9203-df14be8799d7")
+                            ArticlesId = new Guid("e0823ad0-7ee1-417c-b8e6-8c716fee8a40"),
+                            CategoriesId = new Guid("b978f48f-8790-4302-92af-5d7e7b98806a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("139605f3-97c9-49b5-bf5c-7f2f161b44cf"),
-                            CategoriesId = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0")
+                            ArticlesId = new Guid("4fbf1e15-2e18-4b37-be26-7712f74eded8"),
+                            CategoriesId = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9")
                         },
                         new
                         {
-                            ArticlesId = new Guid("139605f3-97c9-49b5-bf5c-7f2f161b44cf"),
-                            CategoriesId = new Guid("11209869-03ad-44e3-9203-df14be8799d7")
+                            ArticlesId = new Guid("4fbf1e15-2e18-4b37-be26-7712f74eded8"),
+                            CategoriesId = new Guid("b978f48f-8790-4302-92af-5d7e7b98806a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("b5870998-4329-42db-a824-cf86947af4e9"),
-                            CategoriesId = new Guid("de2fbce7-96a1-48fe-85cf-63a4c2e834f7")
+                            ArticlesId = new Guid("2a387d54-d7ae-42d9-941f-e58eff249613"),
+                            CategoriesId = new Guid("6733ae52-dba5-4c6d-bf3e-83cee6bbeb32")
                         },
                         new
                         {
-                            ArticlesId = new Guid("b5870998-4329-42db-a824-cf86947af4e9"),
-                            CategoriesId = new Guid("2464302c-deb1-433e-85b7-7d637da7e99c")
+                            ArticlesId = new Guid("2a387d54-d7ae-42d9-941f-e58eff249613"),
+                            CategoriesId = new Guid("df8ba537-4b03-4eee-bf2e-f6e161940f1a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("cb23b4dc-aa45-4831-8cf7-ffe43d1103a4"),
-                            CategoriesId = new Guid("7b598e88-5f2e-4f55-9c4b-528c801ae4f6")
+                            ArticlesId = new Guid("d4723c29-ee7f-4311-81f7-0a4fdd896149"),
+                            CategoriesId = new Guid("7d22d895-23dc-4f8b-8be8-19f1505e3409")
                         },
                         new
                         {
-                            ArticlesId = new Guid("cb23b4dc-aa45-4831-8cf7-ffe43d1103a4"),
-                            CategoriesId = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0")
+                            ArticlesId = new Guid("d4723c29-ee7f-4311-81f7-0a4fdd896149"),
+                            CategoriesId = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9")
                         },
                         new
                         {
-                            ArticlesId = new Guid("cb23b4dc-aa45-4831-8cf7-ffe43d1103a4"),
-                            CategoriesId = new Guid("2464302c-deb1-433e-85b7-7d637da7e99c")
+                            ArticlesId = new Guid("d4723c29-ee7f-4311-81f7-0a4fdd896149"),
+                            CategoriesId = new Guid("df8ba537-4b03-4eee-bf2e-f6e161940f1a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("900a66e9-7893-4b23-a2b2-32935c85e87b"),
-                            CategoriesId = new Guid("3149d32e-e2f7-4ce8-b6fe-b85df4917406")
+                            ArticlesId = new Guid("32422fa4-ccab-4f60-bbd4-79a99bb3983f"),
+                            CategoriesId = new Guid("1a45fde8-b211-400e-9af4-2f13e7445cc7")
                         },
                         new
                         {
-                            ArticlesId = new Guid("900a66e9-7893-4b23-a2b2-32935c85e87b"),
-                            CategoriesId = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0")
+                            ArticlesId = new Guid("32422fa4-ccab-4f60-bbd4-79a99bb3983f"),
+                            CategoriesId = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9")
                         },
                         new
                         {
-                            ArticlesId = new Guid("900a66e9-7893-4b23-a2b2-32935c85e87b"),
-                            CategoriesId = new Guid("2464302c-deb1-433e-85b7-7d637da7e99c")
+                            ArticlesId = new Guid("32422fa4-ccab-4f60-bbd4-79a99bb3983f"),
+                            CategoriesId = new Guid("df8ba537-4b03-4eee-bf2e-f6e161940f1a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("71138a3e-cd32-45b3-beba-e792a747c2e0"),
-                            CategoriesId = new Guid("a5116780-2d20-43e3-afcb-a6817828a114")
+                            ArticlesId = new Guid("57ed58e0-fc41-41d9-a8f9-5c6c71e42d61"),
+                            CategoriesId = new Guid("6228ea4c-058c-4fa8-a77c-fcd47382c2f3")
                         },
                         new
                         {
-                            ArticlesId = new Guid("71138a3e-cd32-45b3-beba-e792a747c2e0"),
-                            CategoriesId = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0")
+                            ArticlesId = new Guid("57ed58e0-fc41-41d9-a8f9-5c6c71e42d61"),
+                            CategoriesId = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9")
                         },
                         new
                         {
-                            ArticlesId = new Guid("2434607d-cd4f-4aa9-af7a-6f1f97871004"),
-                            CategoriesId = new Guid("648fc994-92b1-4b8a-8c14-8b0747519220")
+                            ArticlesId = new Guid("ff4c276d-0cb5-4eef-913d-18682cd19c3b"),
+                            CategoriesId = new Guid("206a274b-a377-44e6-8b39-8dffdb7eee9a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("d3cbba10-7a73-4e7d-8a1a-1661de0c98ef"),
-                            CategoriesId = new Guid("648fc994-92b1-4b8a-8c14-8b0747519220")
+                            ArticlesId = new Guid("d5a4da3c-d96b-48c4-98d7-b6eafce40936"),
+                            CategoriesId = new Guid("206a274b-a377-44e6-8b39-8dffdb7eee9a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("1508c65f-40f5-4ede-910a-92ce8082ad11"),
-                            CategoriesId = new Guid("648fc994-92b1-4b8a-8c14-8b0747519220")
+                            ArticlesId = new Guid("28dc2000-dc00-45cd-8cce-31e6c2ea9624"),
+                            CategoriesId = new Guid("206a274b-a377-44e6-8b39-8dffdb7eee9a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("1508c65f-40f5-4ede-910a-92ce8082ad11"),
-                            CategoriesId = new Guid("11209869-03ad-44e3-9203-df14be8799d7")
+                            ArticlesId = new Guid("28dc2000-dc00-45cd-8cce-31e6c2ea9624"),
+                            CategoriesId = new Guid("b978f48f-8790-4302-92af-5d7e7b98806a")
                         },
                         new
                         {
-                            ArticlesId = new Guid("1508c65f-40f5-4ede-910a-92ce8082ad11"),
-                            CategoriesId = new Guid("3149d32e-e2f7-4ce8-b6fe-b85df4917406")
+                            ArticlesId = new Guid("28dc2000-dc00-45cd-8cce-31e6c2ea9624"),
+                            CategoriesId = new Guid("1a45fde8-b211-400e-9af4-2f13e7445cc7")
                         });
                 });
 
@@ -379,7 +379,7 @@ namespace Haber35.DAL.Migrations
                             Adress = "Teleferik mahallesi Balçova/İzmir",
                             BirthDate = new DateTime(1995, 8, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ConcurrencyStamp = "d3ebae65-8fca-4b48-a673-149ea670d8c8",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 688, DateTimeKind.Local).AddTicks(1191),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 407, DateTimeKind.Local).AddTicks(771),
                             Email = "hakan35@hotmail.it",
                             EmailConfirmed = true,
                             FirstName = "Hakan",
@@ -393,7 +393,7 @@ namespace Haber35.DAL.Migrations
                             SecurityStamp = "YFZSZFREU2D5QIXVH5AISZMENKE76MLB",
                             Status = true,
                             TwoFactorEnabled = false,
-                            UpdatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 689, DateTimeKind.Local).AddTicks(786),
+                            UpdatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 407, DateTimeKind.Local).AddTicks(7417),
                             UserName = "hgultekin"
                         });
                 });
@@ -450,24 +450,24 @@ namespace Haber35.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("8f08cfed-784d-4067-9a35-75da130a37a2"),
+                            Id = new Guid("da826353-32c1-4767-955d-e6f2a0de9bf7"),
                             Content = "Şakayla aldatmayı birbirinden ayıran en önemli kriter, şakacının yaptığı şakadan bir çıkar elde etmemiş olması ve şakanın yapıldığı kimseye bir süre sonra mutlaka ve mutlaka “maruz kaldığı şeyin şaka olduğu” bilgisinin verilmesi ya da anlamasının sağlanmasıdır. Yani yaptığınız şakayı itiraf etmiyor, bundan bir de çıkar elde ediyorsanız, yaptığınız şey şaka değil, bir tür aldatmadır.Kimi şakaların etkisi, şaka yapanla şaka yapılan arasında kalmaz, kişisel olmaktan çıkıp toplumsal hale bürünür ve bir hatayı, bir olumsuzluğu veya bir şeylerin yanlış gittiğini ortaya koymayı sağlar.\n\n Bu haftaki yazımda edebiyattan bilime, bir şeylerin yanlış gittiğini ortaya çıkarmayı amaçlayan kimi kahramanların yaptıkları bazı şakalardan örnek vermek istiyorum: Birinci örneğimiz edebiyat alanından… Chuck Ross adlı bir kablo TV satıcısı yazmaya çok meraklıydı ancak yayın dünyasının yazarlar arasında ayrımcılık yaptığına inanıyordu. Bunu kanıtlamak için Jerzy Kozinsky’nin 1969 yılında Amerikan Ulusal Kitap Ödülü’ne layık görülen “Adımlar” adlı romanını yeniden daktilo edip, başka bir yazar adıyla birlikte kitabın orijinal yayımcısı Random House da dahil ABD’deki 14 büyük yayınevine ve 13 edebiyat ajansına gönderdi. Kitabı bu 27 kurumdan hiçbiri tanımadığı gibi, tümü taslağı reddetti. Şaka, Ross’un da arzu ettiği üzere, yayınevlerinin isimsiz yazarlara nasıl büyük bir önyargıyla baktığını ortaya koymuş oldu.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(7393),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(4763),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/1.png",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(7753),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5012),
                             Status = true,
                             Title = "Bilimin şakası olur mu?",
                             Viewer = 1234
                         },
                         new
                         {
-                            Id = new Guid("0c9cf8b4-34cc-4c03-b711-9b1f9800e14f"),
+                            Id = new Guid("6d27ffc8-1e75-451a-92ff-5901ac843ed5"),
                             Content = "Bir süredir 4 büyük firmayı, stratejilerini ve neler yaptıklarını daha yakından izlemeye başladım. Sektörde GAFA adı verilen bu dört firma (Google, Apple, Facebook, Amazon) farklı alanlarda liderlikleri olsa da, bir çok alanda da kesişiyor ve birbirleriyle yarışıyorlar. Hatta daha da sert çekişmelerin olması da kaçınılmaz gibi görünüyor.\n\nAmazon ülkemizde her ne kadar genelde AWS ile bilinse (hatta pek bilinmese) de aslında ABD’de bir çok sektörü derinden etkilemiş, değiştiren ve dönüştüren çok kilit firmalardan birisi. Amazon’un hikayesi, kuruluş süreci gibi konulara girmeden, amacım benim dikkatimi çeken bazı konularda -özellikle de Amazon’un evlere ne kadar sık ve etkili bir şekilde ulaşmasını içeren birkaç konuda Amazon’un ne durumda olduğunu paylaşmak sadece.\n\nABD’de 20 senedir hisseleri borsada işlem gören Amazon, perakende pazarında %5’lik bir paya sahip. Kitap satışı ile işe başlayan Amazon, şu anda neredeyse her şeyi bulabileceğiniz bir açık pazar.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8102),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5254),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/2.jpeg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8104),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5255),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Kitapçıdan teknoloji devine: Amazon ne yapıyor da dünyayı değiştiriyor?",
@@ -475,12 +475,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("25abe23e-e706-41a2-bc67-9c0961f26cc1"),
+                            Id = new Guid("7a14cc15-fe67-445d-a58c-66f45ef183cd"),
                             Content = "Beynimiz kuşkusuz bizim için en önemli organımızdır. Beynimizi daha verimli kullanmak için birçok zihinsel aktivite yaptığımız gibi, uzmanlar tarafından önerilen fiziksel aktiviteleri de zaman zaman uygulamamız gerekmektedir. İşte bu fiziksel aktivitelerin en önemlisi spordur.\n\nSpor yapmak beynimiz için son derece önemli bir fiziksel aktivitedir. Spor yapan bireylerin, yapmayanlara oranla çok daha rahat odaklandığı, konsantre olduğu, hafızalarının çok daha gelişmiş olduğu ve algılarının da egzersiz yapmayan kimselere oranla çok daha açık olduğu bilimsel araştırmalar ile kanıtlanmıştır.\n\nBu anlamda yapılan araştırmalardan bir tanesi de bir Nörobilimci olan ve aynı zamanda bir TED Talks konuşmacısı olarak bizlere kendisini tanıtan Wendy Suzuki’ye ait. Wendy Suzuki, düzenli yapılan egzersiz sayesinde beynimizdeki dopamin, seratonin, nöradrenalin gibi hormanların salgılanışındaki artışı çalışmalarında gözlemlediğini bunun da beynimizin özellikle hafıza, odaklanma, konsantrasyon gibi işlevlerini yerine getirmede çok daha iyi çalıştığını söylemekte.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8179),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5259),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/3.jpg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8181),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5260),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Spor Yapmanın Beynimizi Değiştiren Faydaları",
@@ -488,12 +488,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("3d3e3706-0836-461d-853b-4183d0c83daf"),
+                            Id = new Guid("6d1dc615-162d-412d-8740-656502f26b8c"),
                             Content = "Mağaradan, tarım toplumlarına.. Feodal beyliklerden, sanayi devrimine.. Ve günümüzdeki şirket yapılarına uzanan, insanlığın organizasyon yapısı değişimine baktığımızda tek bir şey görüyoruz: Daha fazla adalet arayışı! Şirketlerden koşarak istifa eden insanlar ne istiyor: Hiç çalışmamak mı? veya zevk aldığı, huzurlu olduğu, kendisinden bir şeyler verebildiği işlerde çalışmak mı? İnsanların büyük şirketlere girmek yerine startuplara yönelmesini, kazanç önemli değil kendim bir Instagram store açarım incik boncuk satarım çabasını, freelance çalışırım mesai saatlerimi kendim belirlerim mantığını incelediğimizde gelecekte şirketlerin istedikleri nitelikte çalışan bulmakta zorlanacağını tahmin etmek zor değil. Burada hemen akla gelen işsizlik ve benzer vasıflarda çok fazla insan varken bunun hiçbir zaman olmayacağı. Kesinlikle evet! Hiçbir zaman şirketler çalışan bulamayıp boş kalmayacak. Ancak istediği adamları bulamayacağı ya da dengeyi kaybedeceği noktaya gelecek.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8187),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5264),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/4.jpeg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8188),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5265),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Tarih Çağları ve Organizasyon Yapıları",
@@ -501,12 +501,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("5bef0525-9007-47ac-b0b2-1567aef33a34"),
+                            Id = new Guid("771bca6d-1e5a-4bea-a507-b225db4e0f68"),
                             Content = "Arkadaşlar selamlar bu yazımda, ASP.NET Core projelerinde çok kullandığımız Dependency Injection kavramından ve yaşam döngüsünden bahsedeceğim. Dependency injection SOLID prensiplerini uygularken bağımlılıkların en aza indirmek için kullanılan bir yöntemdir. Dependency injection kullanımı ile beraber loosely coupled yapısına da uygun kod yazmış oluruz. Projeye yeni özellikler eklerken, düzeltme veya ekleme yapılacak bölümler en aza indirilmiş olur. Bağımlılık tanımlarını yaparken 3 adet farklı yaşam döngüsü bulunmaktadır.\n Transient (AddTransient) : Uygulama içerisinde bağımlılık olarak oluşturduğumuz ve kullandığımız nesnenin her kullanım ve çağrıda tekrardan oluşturulmasını sağlar. \n Singleton (AddSingleton) : Uygulama içerisinde bağımlılık oluşturduğumuz ve kullandığımız nesnenin tek bir sefer oluşturulmasını ve aynı nesnenin uygulama içinde kullanılmasını sağlar. \n Scoped (AddScoped) : Uygulama içerisindeki bağımlılık oluşturduğumu nesnenin request sonlanana kadar aynı nesneyi kullanmasını farklı bir çağrı için gelindiğinde yeni bir nesne yaratılmasını sağlar.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8193),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5268),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/5.png",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8195),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5269),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Dependency Injection nedir? ASP.NET Core projelerinde nasıl kullanılır?",
@@ -514,12 +514,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6e525b81-4f2b-4ad8-b0bc-1278792d4846"),
+                            Id = new Guid("b313f49a-6dfd-49c8-a6aa-6aa93adba2f6"),
                             Content = "Kimilerinin en büyük korkulu rüyası(!), kimileri için tam bir zaman kaybı. Hayatımızı devam ettirebilmek için en temel şeylerden biri uyku . Gerçekten gerektiği kadar önem veriyor muyuz, kaliteli uyku uyumayı başarabiliyor muyuz? Bunlar hep büyük muammalar. Ancak araştırmaların ortaya çıkardığı gerçek ise, insanların gitgide daha az uyku uyumaya başladığı. Bu vahim durum, uzun vadede erken ölüm riskinde artışa kadar varan kapsamlı sağlık sorunlarının kaynağı olarak görülüyor. \n Ömrümüzün yaklaşık üçte birlik kısmını alan uyku pek çok kişi tarafından zaman kaybı olarak görülür. Hatta daha az uyuyan insanlar, çok uyku uyuyanların hayatı kaçırdıklarını, zamanın bir kısmını boşa harcadığını düşünür. Ancak araştırmalar yeterince uyku uyumayan insanların yaşam sürelerinin daha kısa olduğunu gösteriyor. Bir başka deyişle hayatı kaçırmayayım derken, başka türlü kaçırıyor olabilir.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8200),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5273),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/6.jpeg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8201),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5274),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Her Şeyin Başı Sağlık, Sağlığın Başı Uyku",
@@ -527,12 +527,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("d5b8ec51-9d20-4276-a609-4b96c7b11a6f"),
+                            Id = new Guid("d1659c94-953f-4035-94b2-d4fda156b779"),
                             Content = "Bireysel olarak çevre üzerindeki etkimizin bir bölümünü neler yediğimiz belirler. Bugüne kadarki en sofistike analizlere göre, sağlıklı yiyecekler yemek her zaman çevre için de en iyi yoldur. Araştırmacılar, sağlıksız diyetlerin insanlara ve gezegene ciddi zarar vererek toplumu tehdit ettiğini gösteriyor. İklim değişikliği göz önünde bulundurularak yemek yemek, 2020'nin en büyük gıda trendi olarak şekilleniyor. Günümüzde beslenme ile ilgili büyüyen bu yeni trend, sağlıklı beslenirken bir yandan da öğünlerin doğaya daha az zarar vermesine dikkat etmeyi içeriyor. İnsanlar, daha az et ve süt tüketen, çevre dostu alternatifler arayan bir ‘iklim diyetine’ yöneliyorlar.\n\n Daha fazla sebze ve daha az (veya hiç) hayvansal ürün yemek, daha sürdürülebilir gıda seçimleri yapmak, sağlığımızı da iyi yönde etkileyen bir unsur. Bununla beraber, vegan olmak ve iklim diyeti uygulamak aynı şey olarak algılanmamalıdır. Hatta badem ve soya gibi popüler vegan gıdalarının yüksek su kullanımı ve ağaçsızlaşma açısından negatif etkileri olabilir. Vejetaryenlerin, veganlardan değişik olarak tükettiği süt ürünlerinin, son dönemlerde yapılan yeni araştırmalar sonucunda, olumlu etkisi de soluklaşmış durumda. Kısaca, pastırma yerine peyniri tercih etmenin gezegen için çok daha yararlı olmadığı ortaya çıktı.\n\nAraştırmalar, genel olarak, iklim, su ve sağlık krizlerini hafifletebilecek diyet değişikliklerini öneriyor. Büyükbaş hayvan, koyun ve keçi etlerinin tüketiminin en yüksek çevresel zarara neden olduğu doğrulanıyor. Ancak, günde bir kez belirli hayvansal ürünler yemenin, etleri hariç tutan ancak süt ürünleri tüketen lakto-ovo vejetaryen diyetlerinden, dünyamız için daha az zararlı olduğunu ortaya çıkarıyor. Tavuk ve balık, özellikle yerel çiftçilerden veya yerel balık pazarlarından satın alındığında, kırmızı etten daha iyi seçenek durumundalar. Yerel et, nakliye emisyonlarını azaltmakta yardımcı konumdadır. Meyve ve sebze satın alırken de “mevsimsel ve bölgesel” durum da değerlendirilmelidir.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8206),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5277),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/7.png",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8208),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5278),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Beslenme ile İlgili Büyüyen Yeni Trend: İklim Diyeti",
@@ -540,12 +540,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("287f6a42-0de7-4d78-8a4a-02bd057aad40"),
+                            Id = new Guid("38f5a001-077e-47c0-836b-0750ad77e1d5"),
                             Content = "Tüm kurumlar hızla evrilirken, en eski kurumlardan biri olan okulların da bu değişimden etkilenmemesi mümkün değil. Önümüzdeki yıllarda eğitim bu güne kadarki en hızlı değişim döneminden geçecek. Tüm sektörlerde gördüğümüz altüst olma, eğitimde de olacak. Eğitimciler için pek heyecanlı bir dönem geliyor: ya altüst edileceğiz ya da altüst edenlerden olacağız.\n\nGünümüzün eğitim sisteminin birçok öğesi (8 yıllık zorunlu okul, okuma/yazma ve aritmetik temelli müfredat, not, sınıf, ders, öğretmen) 18. yüzyıl sonunda Prusya’da kurgulandı ve 19. yüzyılda ABD’de geliştirildi. Öğretmenden öğrenciye içerik nakli üzerine kurulu bu üretim hattı modelinin temel amacı emirlere uyabilen, zamanını yönetebilen, rutin süreçleri uygulayabilen, temel okuryazarlığa sahip endüstriyel ekonomi işçisi yetiştirmek idi. Bu modelin zamanı çoktan geçti. Bilginin meta olduğu çağımızda, bırakın endüstri işçisini, bilgi çalışanı yetiştirmek bile yetersiz, artık doğru cevabı aramak yerine farklı cevaplar oluşturabilecek akıllı yaratıcılar yetiştirmek gerekiyor. Fakat maalesef, elimizdeki eğitim sistemi geleceğin toplumu için gereken insan kaynağını oluşturmaktan aciz. Tüm dünya eğitimde dönüşümün sancılarını yaşıyor. Ülkemizde ise durum daha da vahim: bırakın geleceğe insan yetiştirmeyi, eğitim sistemimiz günümüzün ihtiyaçlarını bile karşılamaktan uzak. OECD 2015 Yetişkin Becerileri Araştırması’nda en üst düzeye erişebilen yetişkin oranında tüm kategorilerde (sözel, sayısal, teknoloji ile problem çözme) ve tüm yaş gruplarında (16–24, 25–34, 35–44) sonuncu olmamız tesadüf değil. 2015’de gelmiş geçmiş en kötü PİSA sonuçlarını almış olmamız da tesadüf değil; bu yılın sonunda açıklanacak olan 2018 sınavı sonuçları daha da kötü çıkabilir. Milli Eğitim Bakanımız iyi şeyler için çabalıyor, fakat sistemi bir kişinin kısa sürede değiştirebilme olasılığını düşük görüyorum.\n\nÇağımızda eğitimde değişimi tetikleyen 6 önemli güç var: hızla artan bilgi, yükselen maliyetler, eşitsizlikler, eğitime hızla giren teknoloji, eski sistemi reddeden Z kuşağı ve eğitimde dönüşümü sağlayacağına inandığım girişimciler. Bu 6 önemli gücün etkileşimi sayesinde önümüzdeki 20 yıl içinde eğitimde ciddi bir dönüşüm yaşanacağını düşünüyorum. 21. yüzyılda eğitimin amacı artık öğretmenden öğrenciye bilgi aktarmak değil, çünkü artık bilgi meta haline geldi ve bilgiye ulaşım çok kolay. Öğrenciler istedikleri yerden istedikleri zaman internetten video izleyerek veya farklı bir kaynaktan istedikleri şeyi öğrenebiliyorlar. Sınıfta oturup öğretmeni dinlemek yerine kendi aralarında kurdukları irili ufaklı fiziksel veya sanal gruplar ile rahatlıkla öğrenebiliyorlar. Eğitim sistemi öğrencilerin değişen öğrenme biçimlerini ve alışkanlıklarını göz önüne alınarak yeniden kurgulanmak zorunda. 21 yüzyılda eğitimin temel amaçları tutku ve hedef keşfi, kritik becerilerin (eleştirel düşünme ve problem çözme; iş birliği, hızlı hareket ve adaptasyon; inisiyatif ve girişimcilik; etkin sözlü, yazılı ve multimedya iletişim; bilgiye ulaşım ve bilgi analizi; merak ve hayal) geliştirilmesi ve belki de en önemlisi öğrenciye ilham vermek!",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8223),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5282),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/8.jpeg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8224),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5283),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Eğitim Evriliyor mu?",
@@ -553,12 +553,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("d5d282a8-aa5e-4bad-b90b-ccb3a15a8eb2"),
+                            Id = new Guid("17ae47b6-936b-40ae-ab76-c3f07069abfb"),
                             Content = "Felsefenin ontoloji, siyaset, mantık gibi şanlı kolları varken neden estetik ve sanatla ilgilendiğimi sormuştu birkaç kişi. Çünkü çoğu insan sanatla ilgilenmenin zengin hobisinden öte bir şey olmadığını düşünüyor. Öyle ya iyi bir resim ya da heykel ancak ev dekore edebilir. Hala görüyorum bazen yorumlarda “hakikatin peşindeysen, hakikati araştırıyorsan…” şeklinde başlayan ve sanatın hakikatini küçümseyen ifadeler. Ben sanırım kendimi anlatamadım. Hakikat denen bir şey olmadığı ve hayatta katlanabilmenin en iyi yolu sanat olduğu için sanatla ilgileniyorum. Tarkovsky’nin sevdiğim bir sözü var, “Dünya mükemmel olmadığı için sanat vardır.” demişti. Bu sanat 15. yüzyılda resim ve heykeldi. Şimdi ise sinema, şiir, müzik, edebiyat… Yol değişebilir ama örtülü amaç hep aynı diye düşünüyorum. Yaşamı anlamak ve katlanmak.\n\nHakikatperest değilim. Sonsuz deneyim ufukları var benim için yalnızca. Ben bir müzik dinlerken veya bir film izlerken o nesne öznede nasıl bu etkiyi yaratıyor; nasıl özneyi ele geçiriyor; nasıl bazı şeyler bizi büyülerken diğerleri sıradan geliyor; nasıl ortaya haz duygusunu ortaya çıkartıyor ve nasıl kendine yeni bir gerçeklik yaratabiliyor bunları merak ediyorum. Sanat yapıtını ve estetik deneyimi anlamaya çalışıyorum. Anlayayım ki tüm dünya deneyimim tıpkı sanat deneyimim gibi estetikleşsin, yürümek dahi dans etmek kadar zevk versin istiyorum.\n\nSonsuzun değil; yaşamın peşindeyim.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8230),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5286),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/9.jpeg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8231),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5287),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Sanat uzun, hayat kısa.",
@@ -566,12 +566,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("bd61950f-4bd3-4b67-8fa1-cbf1fceee841"),
+                            Id = new Guid("38fef9ad-912d-41ee-9d91-b6985be70a8e"),
                             Content = "Yapay zekâ yolunda atılan adımları ve yaşanan gelişmeleri son derece ilgiyle takip ediyorum. Bu alanda beni çok heyecanlandıran pek çok yenilikle her geçen gün karşılaşsam da özellikle belirtmeliyim ki; bu yenilikler içinde yapay zeka ve sanat ilişkisi hiç ilgimi çekmemişti. Ancak geçen yıl bir konuşma sonrası dinleme fırsatı bulduğum Robot Şair Deniz Yılmaz ‘ın hikayesi beni şaşırtan ve üzerinde düşünmeye iten bir etki yarattı.\n\nBir düşünsenize; “akıllı” bir robot gerçekten okunası şiirler yazıyor, sanatla uğraşıyor; yani “his”lerini ve “düşünce”lerini toplumla buluşturmaya, sesini duyurmaya ihtiyaç duyuyor ve bunda da son derece başarılı. Öyle ki, kendi adını taşıyan şiirlerinin derlendiği kitabı sayesinde okurlarıyla, “hayran kitlesi”yle buluşuyor.\n\nDeniz Yılmaz’ı yaratan düşünceyi, beyni daha önceden de yaptığımız özel sohbetlerle şahsen tanıyorum; ancak onu sizlerle de buluşturmak, yapay zekâ ve sanatı nasıl harmanladığını kendi ağzından sizlere aktarabilmesini sağlamak üzere geçtiğimiz günlerde Dijital CEO ile Teknoloji Sohbetleri’nde kendisini ağırladım ve son derece keyifli bir sohbet gerçekleştirdik. Bager Akbay’dan bahsediyorum. Bana göre çok özel bir beyne sahip ve kendisiyle yaptığım her sohbette yepyeni bir bakış açısı kazanmamı sağlıyor. O nedenle sizlerin de bu sohbetten keyif alacağınızı umuyorum.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8236),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5293),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/10.jpg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8237),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5294),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Yapay Zeka ve Sanat",
@@ -579,12 +579,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("5c9efbbb-b536-402c-b817-aedf80864ada"),
+                            Id = new Guid("93c2c7a8-d0a1-4430-85de-442132d4ee7c"),
                             Content = "Son günlerde sağlık teknolojilerine dair gelişmelere olan merakımın ve bu alanda yeni bilgiler öğrenme isteğimin artması için bazı nedenler oldu. Öncelikle yeni cerrahi teknolojilerin bugün geldiği noktayı, sonrasında genetik hastalıkların tedavisinde kullanılmak üzere çalışılan yeni teknolojileri öğrenme fırsatı buldum.\n\nBeni en çok şaşırtan, sağlık teknolojilerinin (HealthTech) günlük hayatımızda kullandığımız teknolojilerden çok daha hızlı geliştiğini fark etmek oldu. Artık yeni bilgisayar modellerine şaşırmıyor ya da yeni telefon modellerine hayran kalmıyoruz. Bir bakıma kendi sınırlarına ulaştıklarını (singularity) söyleyebiliriz. Ancak sağlık için teknoloji kullanımı; güncel donanım ve yazılımlar sayesinde şaşırtıcı bir şekilde gelişiyor. Artık vücudumuzun en zor bölgesindeki cerrahi müdahaleler açık yara olmadan robotik kollar yardımıyla yapılıyor. Veya iflas eden bir organın yerine yeni organlar transplantasyon yapılmadan görev alabiliyor.\n\nTüm bunları paylaşırken uzmanı olmadığım bir konuda ahkam kesmek değil, bilmediğim bir alanda gelişen teknolojik gelişmelere karşı şaşkınlığımı ifade etmek istedim. Sadece kendi uzmanlık alanlarımıza bakarak dünyayı değerlendirmek yerine, diğer alanlara da göz atmakta her zaman fayda var. Bu sayede bazen kendi işlerimizde çok büyük sandığımız değişim ve sıçramaların değerlendirmesini daha sağlıklı yapabiliriz. Bu nedenle diğer disiplinlerdeki gelişmeleri öğrenmeye ve merak etmeye zaman ayırmak gerekiyor.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8243),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5349),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/11.png",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8245),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5350),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Sağlık İçin Teknoloji",
@@ -592,12 +592,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0ce36fba-a197-4180-83a9-eba10239fb0c"),
+                            Id = new Guid("de89a8d6-8e56-47c9-98c7-69348778ad84"),
                             Content = "Bu yazıyı 2013 senesinde akademik kariyerimin bebek adımlarını atarken (sektörden yeni geçmiş olmanın verdiği bir gazla) ilk defa kaleme almış ve farklı bir mecrada yayınlamıştım. O zaman da çok ilginç ve keyifli yorumlar almıştım. Şimdi Aykırı Yazılımcılar için yazıya tekrar el attım ve güncelleyerek sizlerle paylaşıyorum.\n\nÖzellikle yazılım işine hiç girmemiş ya da bu işe bulaşmamış ama programlamadan çok iyi anlayan :) arkadaşlara, bölünmenin mahiyetini ve maliyetini terbiyenizi bozmadan bilimsel bir dille anlatmak için yine bu yazıyı kullanabilirsiniz…\nYazılım geliştirme (programlama, kodlama), yaratıcı bir iş çıkartmayı (değeri olan bir çıktı elde etmeyi) hedefleyen bir süreç olup, azami dikkat ve konsantrasyon gerektirir.\nNot: Tam da bu noktada “yazılım bir sanat mıdır?”, “programlama sanatı”, “yaratıcılık ve yazılım”, “yazılım mühendisi olma yazılım sanatçısı ol”, “yazılım geliştirme sadece yaratıcı insanlar için mi?” gibi ucu bucağı bitmeyen konuları açıyoruz… Şimdilik bunları az öteye park edelim :)\n\nTam konsantre bir programlama sırasında beyin bir “akış” (flow) moduna geçmekte, etrafla ilişkisini kesmekte ve bir probleme günlerce konsantre olabilmektedir. Ciddi bir çevresel izolasyon gerektiren akış moduna girildiğinde, üretkenlik maksimum düzeydedir ve tüm kritik kodlamalar bu seviyede yapılır.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8250),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5353),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/12.jpg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8252),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5354),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Yazılımcı Konsantrasyonu, Beyin Akış Durumu ve Bölünmeler Üzerine",
@@ -605,12 +605,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("a46ecd4b-a11c-42a3-b757-c928f8638b2d"),
+                            Id = new Guid("b3df2732-18b2-4349-aa11-e81b6bb0838b"),
                             Content = "Hasta hayatını kurtarabilecek bilginin hızlı paylaşımı ya da maliyet yaratan bürokrasinin azaltılması gibi konularda Blockchain bazlı girişimler sağlık sektörünün oyuncuları olan hasta, hastane, sigorta ve ilaç şirketlerine yeni açılımlar getirebilir.\n\nSon iki yazımızda Blockchain’nin sadece finans dünyasında değil başka pek çok alanda da kullanılabileceğini söylemiş ve bunlardan sanat ve insani yardım dünyası yararına yapılabileceklere bakmıştık.\n\nBu yazımızda ise sağlık alanında Blockchain bize ne gibi faydalar sağlayabilir ona göz atacağız.\n\n2015 yılı Haziran ayında “thedarkoverlord” isimli bir hacker yaklaşık 10 milyon Amerikalı’ya ait medikal veriyi 1 milyon ABD Dolarına yakın bir rakamdan satışa çıkardı. Hacker bu gizli medikal bilgileri dört ayrı şirketin ana bilgisayarlarından almıştı. İşte size merkezi sistemlerin en büyük dezavantajlarından biri: Verilerin bir arada tutulduğu merkezi yapılar her zaman güvenlik açığı potansiyeli taşır.\n\nÖte yandan sağlık kurumlarının kendi özel veritabanlarını tutmaları ve hastaya ait bilgilerin kurumlar arasında paylaşımı ciddi bir sıkıntı. Sistemlerin birbiri ile konuşmaması bir yana bir şekilde iletişim sağlansa bile yaşanan gecikmeler dakikaların bile çok önemli olduğu kimi durumlarda daha ciddi sorunlara hatta ölümlere kadar giden kayıplara yol açabiliyor. Bilgi eğer hastanın kontrolünde olsa acil müdahale gerektiren kritik durumlarda hasta (ya da yakınları) o an ulaşabildikleri ilk sağlık kurumunda yetkili kişilere bu bilgilere erişime izin verebilir ve hastaya gerekli müdahaleler zamanında yapılabilir.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8257),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5358),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/13.jpeg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8258),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5359),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Sağlık için Blockchain",
@@ -618,12 +618,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("522db709-ebc0-4879-b368-bd82e850abc7"),
+                            Id = new Guid("d9be1e7f-4a13-4b65-b210-149c3c653147"),
                             Content = "Yediklerimizin vücudumuza dolayısıyla da sağlığımıza etkisi konusunda yapılmış binlerce araştırma bulunuyor. Bu doğrultuda dikkat etmemiz gereken ya da her zaman tüketmeye özen göstermemiz gereken besin grupları var. Ancak bu besin gruplarının etkileri daha genel geçer doğrular şeklinde kabul ediliyor. Farklı bireylerde aynı besinler bambaşka sonuçlara sebep olabiliyor. Örneğin lahana genelde yararlıdır ancak böbrek taşı geliştirmeye yatkın bireylerin dikkat etmesi gereken yiyeceklerin başında geliyor.\n\nDoğru yiyecekleri tüketme ve daha sağlıklı bir bedene sahip olma konusunda farklı alanlarda destek veren teknolojik birçok çözüm var.İlk olarak tüketilen gıdaların içindeki bileşenlerin neler olduğuna odaklanan uygulamalar var. Bu uygulamalar genellikle bir bileşenin belli bir besinde olup olmadığını ölçebiliyor. Nima isimli girişimin evde kullanım için geliştirdiği kit sayesinde bir besinde gluten olup olmadığını ölçebiliyorsunuz. Tellspec ise tahmini olarak bir yiyecekteki kalori ve besin değerlerini ve glisemik yüklemeyi gösteriyor. MyDX ise geliştirilen aparatla yiyeceklerde ağır metaller ya da zehirli ilaçlar var mı onu kontrol etmenizi sağlıyor. İçtiğiniz su için de kullanabiliyorsunuz.\n\nTeknolojinin kişisel sağlık konusunda katkıda bulunduğu alanlardan biri de sanal danışmanlarla doğru beslenme ve egzersiz tavsiyeleri vermek. Ph360 firmasının geliştirdiği Shae isimli danışman önce detaylı bir soru formunun ardından sizi iyice tanıyor ve her gün sağlık durumunuz, hedefiniz ve ortam şartlarına göre en doğru yiyecekleri size öneriyor. Ayrıca ne zaman ve ne şekilde egzersiz yapmanız gerektiğini de iletiyor. Sadece soru formu değil zamanla alışkanlıklarınızı öğrenerek ona göre algoritmalar geliştiriyor ve önerilerini çeşitlendirebiliyor.\n\nDiğer bir alan sizin kişisel sağlık değerlerinizin takibi ile ilgili. Habit, Nutrigenomix, PlainSmart, DNAFit, LifeNome gibi birçok girişimin evde kullanılmak için geliştirdiği kitlerle kan değerleriniz ve DNA’nız takip edilebiliyor ve metabolizmanıza göre uygun beslenme önerileri alabiliyorsunuz. Bu daha da kişisel olarak takibinizi sağlıyor.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8263),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5362),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/14.png",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8265),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5363),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "En Doğru Beslenmenin Yolu Teknolojiden Geçer",
@@ -631,12 +631,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0666819d-d275-4cfa-9cf6-cbdcf92c7bcf"),
+                            Id = new Guid("e0823ad0-7ee1-417c-b8e6-8c716fee8a40"),
                             Content = "Geçtiğimiz günlerde internet dergilerini karıştırırken karşıma tınısı çok hoş bir kavram çıktı: “Sanat terapisi” bir solukta okuyup bitirdiğim yazının ardından bunu mutlaka kendi okuyucularımla da paylaşmalıyım diye düşündüm.\n\nHemen hepimizin dönem dönem içine girdiğimiz zor günleri atlatmak için sevdiğimiz şeylere yöneldiğimiz bilinen bir gerçek, ancak inanın bana sanat terapisi çoğundan daha etkili ve bilinç dahilinde gerçekleştirile bir yöntem. Öncelikle kavrama bir tanım getirerek başlamak istiyorum anlatmaya. Sanat terapisi, sanatın farklı alanlarını (resim, müzik, edebiyat veya dramayı) kullanarak kişilerin kendilerini daha iyi yorumlayıp iyileşme sürecine girmelerini sağlayan bir terapi biçimi.\n\nSanat terapisinin tarihçesi oldukça eskilere dayansa da toplum içerisinde yaygınlık kazanması yaşadığımız günlere tekabül ediyor. Hastaların ortaya koyduğu sanatsal ürünler üzerinden yapılan değerlendirmeler ilk kez 1870'li yıllarda yapılmış. Özellikle II. Dünya savaşının akabininde yaşanan ağır bireysel travmaların çözümünde de yer yer kullanılan sanat terapileri Sigmund Freud ve Carl Gustav Jung gibi isimlerin de kavrama ilişkin farklı yaklaşımlarıyla bugüne dek ulaşmış. Sanat terapisinin Türkiye ayağında ise ilk çalışmaları Prof. Dr. Kazım Dağyolu’nun yaptığını görüyoruz. Dağyolu’nun izinden giden Prof. Dr. Süleyman Velioğlu ise çalışmalarını 1957'den beri yönetilmeye devam eden Psikopatolojik Sanat Laboratuvarında yürütmüş. Günümüzde daha da açılım kazanan sanat terapileri İstanbul Üniversitesi Tıp Fakültesi Anabilim Dalından Doç. Dr. Nurhan Eren’e emanet edilmiş. Eren 1995 yılından beri bireysel ve grup odaklı sanat terapileri gerçekleştiriyor. Terapilerinde ise kişinin davranışlarını resim çalışmaları üzerinden uzun sürelere yayarak değerlendirdiği bir metot izliyor.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8270),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5367),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/15.jpeg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8271),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5368),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Sanatla iyileşmek",
@@ -644,12 +644,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("139605f3-97c9-49b5-bf5c-7f2f161b44cf"),
+                            Id = new Guid("4fbf1e15-2e18-4b37-be26-7712f74eded8"),
                             Content = "Bir arkadaşım, kendisi iyi de bir fotoğrafçı, sanat tarihi okumasına rağmen girdiği bu yıl ziyaret ettiği bir sanat sınıfında hiç anlamadığı fizik konuşmaları yapıldığından bahsediyordu. Buna sanat denmesini de anlamıyor, kendisini bu durum karşısında garip hissettiğini de ekliyordu. Hatta “Bu insanlar sanatçı değil ki biliminsanı!?” diyerek noktayı koydu. Konu konuyu açtı kahvaltıda, ben de anlatmaya başladım.\n\nNeden sanat ve bilimin bu yakınlığı kimimizi heyecanlandırıyor?\nBu soruya uzun uzun argümanlar, makaleler, içeriklerle cevap verebilirim ancak biraz ilgilenip bu yazıya kadar geldiyseniz bildiğinizi varsayıp devam ediyorum açıklamalara.\n\nBu yüzyıl daha başından şiddetli bir büyüme eğrisi çiziyor. Sanki milenyumun ilk saatlerinde bilgi perdesine roket fırlattık yırtıp yırtıp geçiyoruz. 2000'den 5 Şubat 2016'ya kadar bir bilginin diğerini mayalaması süreci elbette insanın merakını cezbetti.\n\nTeknoloji — Sanat — Bilim yakınlığı elbette gündelik teknolojik aletlerin hayatımıza girmesiyle, 1960'lardan itibaren dikkat çekmeye başlıyor. Sonrasında yapılan tonla performans, yazılım, robot, sensör temelli, mekanik temelli, görsel temelli işlerle yeni medya diye genellediğimiz bir alan varoluyor.\n\nYeni medya eserlerine bu kadar yükselmemizin sebebi de işte bu merakımızı cezbeden çağımızın çeşitliliği. Girişimcilikten sanata bilgi temelli herşeyin değerini kaynaklarımızı çeşitlendirerek arttırıyoruz. İyisi kötüsüyle gani gani bilgi var ortada. Bu bilgilere ulaşmamızı sağlayan şey kilit kelimemiz burada.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8279),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5372),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/16.jpeg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8281),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5373),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Yeni Medya Sanat Değil",
@@ -657,12 +657,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("b5870998-4329-42db-a824-cf86947af4e9"),
+                            Id = new Guid("2a387d54-d7ae-42d9-941f-e58eff249613"),
                             Content = "Merhaba, bugün son zamanlarda en çok ilgi duyduğum konulardan biri olan online eğitim deneyimlerimi aktaracağım. Gündelik hayatta koşuşturmaktan hobilere zaman ayırmak ya da ilgi duyduğumuz bir konu hakkında kursa gitmek neredeyse imkansız hale geliyor. Bu yüzden işe giderken yolda ya da evde boş zamanlarımda ilgi duyduğum bir konu hakkında eğitim almak bence inanılmaz güzel bir fikir. Zaman olsa bile belirli bir zaman aralığını ayırmak son derece zor bir durum.\n\nÖrneğin java öğrenmek istiyorsunuz ve bir kursa yazıldınız diyelim. Geçmiş olsun, cumartesi ve pazar sabahlarınız yollarda heba oldu. Sabah 9:00'dan öğlen 15:00'e kadar kursta ders dinleyerek geçireceksiniz. Peki ya canınız bu hafta sabah 9:00'da java dinlemek istemiyorsa? Gece 4:00'da bir anda java öğrenme aşkınız gelirse ne olacak? Bilmiyorum sizin için durum nedir ama ben genelde kafama estiği zaman bir şeyler yapmayı seven biriyim. Her istediğim zaman her istediğimi(belli bir çerçevede) öğrenebileceğim bir online servis varken bunu denememek saçma olurdu.\n\nBizlere bu lüksü sağlayan tek bir servis yok aslında, Udemy, CodeSchool, TreeHouse gibi bir sürü birbirine çok yakın konseptlerde hizmet sağlayıcılar bulunuyor. İlk başlarda Udemy’den ilgi duyduğum konularda dersler satın almaya başladım ancak istediğim kalitede içerikler yoktu ne yazık ki. Udemy aslında sadece bir aracı, birisi geliyor ben Java anlatacağım diyor çekiyor videolarını, bizlerde gidip satın alıyoruz. Böyle olunca dersin içeriği ve kalitesi belli bir standartta olmuyor. Çok kaliteli derslerde var, çok kalitesiz derslerde. Bu sebeple başka arayışlara girdim ve bana göre sektördeki en iyisi olan TreeHouse ile devam etme kararı aldım.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8286),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5376),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/17.png",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8287),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5377),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Yeni Nesil Eğitim Sistemi Ve Yazılım Dünyası",
@@ -670,12 +670,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("cb23b4dc-aa45-4831-8cf7-ffe43d1103a4"),
+                            Id = new Guid("d4723c29-ee7f-4311-81f7-0a4fdd896149"),
                             Content = "Pandemi koşullarının dünya ekonomisi üzerindeki etkileri hissedilmeden çok daha önce, spor endüstrisi uzun vadeli finansal kazanımlar sağlanması gerekliliğine dair sinyaller veriyordu. Bugün ise sinyaller alarm zillerine dönüşmüş durumda.\n\nAvrupa ülkelerinde bahis reklamları üzerine getirilen regülasyonlar 2019 yılı itibarıyla İtalya Serie A takımlarının yıllık 100 milyon Euro, İspanya La Liga takımlarının ise 90 milyon Euro kayıp vermesine sebep oldu.\n\nTeknoloji bazlı inovasyonların spor endüstrisinin şiddetle ihtiyaç duyduğu gelirleri yaratmakta elzem olduğu apaçık görünüyor. Ayrıca, Sport Tomorrow’un çalışmaları, 2030 yılında Z ve Alfa kuşaklarının dünyanın gelir yaratan çalışan nüfusunun neredeyse yarısını oluşturacağını gösteriyor. Bu nesiller, teknolojiyle hemhal olarak büyüyor ve tüketim alışkanlıkları ayrılmaz bir şekilde teknolojiye bağlı. Bu gelişmeler ışığında spor endüstrisinin de değişen dünyanın kurallarını hızlı bir şekilde benimsemesi gerektiği görünüyor.\n\nPandeminin yarattığı koşullar ile çok sayıda gelir kapısından uzaklaşmak zorunda kalan spor kulüpleri dijitalleşmek ve yeni gelir yöntemleri oluşturabilmek için ihtimaller üzerine çalışıyor. Taraftar tokenları tam da bu noktada devreye giriyor. Peki, nedir bu taraftar token?\n\nTaraftar tokenları, sahiplerine Socios.com’da taraftarı oldukları kulüplerle bağlantı kurma şansı sağlayan dijital varlıklar.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8294),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5383),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/18.png",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8295),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5384),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Spor endüstrisinde dijitalleşmenin geleceği: Taraftar tokenları",
@@ -683,12 +683,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("900a66e9-7893-4b23-a2b2-32935c85e87b"),
+                            Id = new Guid("32422fa4-ccab-4f60-bbd4-79a99bb3983f"),
                             Content = "Bazen günlük problemlerle baş edebilmek için okuma yapmak, seçenekleri, alternatifleri öğrenmek, bilgimizi artırmamız gerekir. Çünkü karşılaştığımız problemler bilgi eksikliğimizi yüzümüze çarparlar.\n\nZamanında bizi meşgul eden problemlerden biri Apache Kafka’ya (bir mesajlaşma sistemi) gönderilen JSON formatlı mesajların şema/biçim açısından gelişimini/değişimini yönetebilmekti. Problemin bir boyutu gönderilen mesajlardaki alanların tipini ve uzunluğunu denetlemekti. Yani şemasını kontrol etmek, şema denetimi, şemaya uygunluğun kontrol edilmesi. Diğer bir boyutsa ileride gelecek olan değişikleri geriye/ileriye uyumlu bir biçimde nasıl yönetebileceğimizdi. Yani şema evrimini/değişimini nasıl yönetecektik? Kesin olan şey değişimin kaçınılmaz olduğudur. Yazılım yaşayan bir şeydir. Durmadan değişir. Değişimin bitmesi öldüğü anlamına gelir. Yerine ya yenisi alınır ya da yeniden yazılır. Tablolara yeni kolonlar eklenir, veya var olan kolonlar silinir veya isim değişiklikleri yapılır. Bu değişiklikler en arka taraftan en ön tarafa, kullanıcıya gidinceye kadar olan tüm katmanlarda veri aktarımında değişiklik yapmayı gerektirir. Dolayısıyla Kafka’ya ilettiğimiz mesajların şemasal değişimini nasıl yöneteceğimiz, nasıl ilerleyeceğimiz konusu gündemdeydi.\n\nO sıralar Martin Kleppmann’ın yazdığı “Designing Data Intensive Applications” kitabını okuyordum. Adı gibi yoğun (intensive) bir kitap. Hala okuyorum, muhtemelen önümüzdeki bir kaç yıl daha okuyacağım gibi. :)\n\nGündemde olduğu için kitabın şema evrimi ile ilgili bölümüne öncelik tanıdım. JSON, XML, Protocol Buffers, Avro, Parquet gibi verileri iletirken veya saklarken nasıl ifade edileceğini belirleyen veri kodlama/serileştirme biçimlerini anlatıp, şema evrimi/değişimi açısından bu standartları inceliyordu.\n\nKodlama biçimlerini metin temelli ve binary diye sınıflandırıyordu. Gerçi bu ayrımın daha öncesinde de farkındaydım, ama şimdi özel olarak bu konuya odaklanmıştık. Sonrasında sorular sorular. Metin ne, binary ne, her şey zaten ikili tabanda ifade edilmiyor mu? Her şey sonuçta 1/0 değil mi? Derken url-encoding, base64, utf8, unicode, ascii vb. kodlama biçimlerine dallandım. Kurcaladıkça alttan bir şeyler çıkıyordu. Her yeni öğrendiğim şey yeni şeylere kapı aralıyordu. Kodlama, alfabeler, sayı sistemleri vb. derken olay tarihsel bir yolculuğa dönüştü. Morse alfabesi, telgraf vs. kadar gittik. Bugünü anlamak için geçmişe yapılan bir yolculuk.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8300),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5387),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/19.png",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8301),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5388),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Anlatılmayan Bilişim Tarihinin Peşinde Bir Serzeniş…",
@@ -696,12 +696,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("71138a3e-cd32-45b3-beba-e792a747c2e0"),
+                            Id = new Guid("57ed58e0-fc41-41d9-a8f9-5c6c71e42d61"),
                             Content = "YouTube her bir gün için yaklaşık 50 yıllık içeriğin yüklendiği (her dakika başına 300 saat), bir milyarın üzerinde insanın öyle ya da böyle yolunun düştüğü ve ortalamada her gün 5 milyar videonun izlendiği, kendi başına dünya üzerindeki tüm internet trafiğinin %17'sini kontrol eden bir site. Ancak elbette bunları (sayı detaylarına kadar olmasa da) hemen hepimiz biliyoruz. YouTube’un Google tarafından 2006'da satın alındıktan sonraki devasa kapasite genişlemesi ve küresel ölçekli yaptığı açılımlar (dil destekleri, lokasyona özel algoritmalar vbg.) belki de facebook.com ve google.com’la birlikte onu internetin en bilinen ve önemli üç sitesinden biri haline getiriyor. YouTube elbette başlı başına pek çok kitabı dolduracak bir konu, ancak bu yazı kapsamında çok daha özel ve görece küçük bir YouTube kesiti olan popüler bilim kanallarına vurgu yapacağız. Bu kanallar nedir, neden varlardır ve daha önemlisi ülkemizde bu alanın gelişme şansı var mıdır?\n\nYabancı Kanallar\nSayıları pek çok olan bu kanallara dair iki liste vererek başlayalım (liste1 — liste2). Elbette bu listelere dahil edilmemiş pek çok şahane kanal da mevcut (örneğin SpaceTime). Fizikten biyolojiye, kimyadan kozmolojiye, genetikten mühendisliğe fen bilimleriyle alakalı her alanda uzmanlaşmış bir YouTube kanalı bulmak mümkün. Hatta artık bu iş o kadar köklü bir zemine oturmuş durumda ki işin içeriğinin üstüne animasyon, anlatım, hitabet gibi kısımlarının da özenle hazırlandığı kanallar ortaya çıkmış durumda.\n\nElbette tüm bu emek ve çaba yalnızca YouTube’un her izlenme başına verdiği 0.0005 dolar benzeri paralar için yapılmıyor. Burada işin finansmanından bahsetmek önemli çünkü her ne kadar bir YouTube kanalından popüler bilim anlatmak bize hobi olarak görünse dahi aslında oldukça zahmetli bir uğraş. İçeriğin hazırlanması, anlatılabilecek formata sokulmaları, videoların çekimleri ve düzenlenmeleri derken yalnızca basit bir kamera önünde 10–20 dakikalık anlatım dahi insanın bazen günlerine mal olabiliyor. Üstüne üstlük bir de bu videoları daha izlenebilir ve keyifli kılmak adına eklenen animasyonlar, yapılan deneyler gibi ekstraların da zaman ve parasal maliyetleri göz önüne alınması gerekiyor. Yani ilgi çekici ve keyifli bir video çekip YouTube’a koymanın maliyeti oldukça yüksek. Üstüne üstlük işler burada bitmiyor.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8307),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5391),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/20.png",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8308),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5392),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "YouTube kanalları ve Popüler Bilim",
@@ -709,12 +709,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("2434607d-cd4f-4aa9-af7a-6f1f97871004"),
+                            Id = new Guid("ff4c276d-0cb5-4eef-913d-18682cd19c3b"),
                             Content = "Mustafa Kutlu’yu keşfetmemle hemen onun kısa hikayelerini okumak istedim ve ilk seçtiğim kitap bu oldu.\n\nİçindekilere bakınca birbirinden farklı kısa hikayeler içeren bir kitap sanmıştım ama öyle değilmiş. Bunu biraz geç anladım çünkü bazı bölümleri hikayedeki diğer kahramanların gözünden okuyoruz. Bu tarz bana yeni pencereler açtı diyebilirim. Okunması zor, anlaşılması güç ve eminim ki yazması da çilelidir ama kitabı bitirince garip bir tat alıyorsunuz. Kitabı okumayanlar için baştan uyarayım, yazının devamında hikayeden tat kaçırabilecek detaylar veriyorum.\n\nKitaptaki ana kahramanımız Süleyman bir lunaparkta eşi ve çocuğuyla birlikte, şu garip tüfeklerle balonları patlattığın anlamsız oyunlar vardır ya sonunda ödül kazandığın, işte onun gibi bir şeyde ama vurmaya çalıştığı oyuncak tavşanlara takılıp kalıyor bir süre. Tabii bunu biraz geç anlıyoruz. Her bölümde Süleyman’ın farklı bir yönünü öğreniyor, yaşadığı ayrı bir sıkıntıyı sanki biz de yaşıyoruz.\n\nBütün o sıkıntılardan uzaklaşmak için geldiği bu lunapark ona dar geliyor, burada bile bir türlü gün yüzü göremiyor. Hemen yanı başında patronu birer birer vuruyor tavşanları ama kendisi yanında bir umut bekleyen kızı ve artık sıkılmış olan, gitmek için baskı yapan karısı varken içinden şöyle geçiriyor:\n\nBu kitabı bitireli neredeyse üç hafta oldu ama bu yazıyı hazırlayamadım bir türlü. Ama şu an bile bu cümleyi okurken kendimi Süleyman’ın yerine nasıl koyduğumu, o acayip dünyaya nasıl adım attığımı hatırlıyorum. Benim için bu hikaye bu cümleyle başladı diyebilirim. Iskaladığımız hedefler, kaçırdığımız fırsatlar bu cümleyle gözünüzde canlanıyor.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8313),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5396),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/21.jpg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8315),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5397),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Bu Böyledir, Hedefler, Önermeler ve Hafiflemek",
@@ -722,12 +722,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("d3cbba10-7a73-4e7d-8a1a-1661de0c98ef"),
+                            Id = new Guid("d5a4da3c-d96b-48c4-98d7-b6eafce40936"),
                             Content = "Geçen gün internette dolaşırken önüme bir gönderi çıktı. Kalemine bayıldığım Madeline Miller’ın Ben Kirke kitabındaki bir alıntıyı paylaşmışlardı.\n\nBundan iki sene, bütün dünya kapılarını kapatmaya karar verdiğinde ben de her öğrenci gibi evime döndüm. Üniversitede sadece bir dönem geçirmiştim. Üniversitenin ne olduğuna dair en ufak bir fikrim yoktu. Birileriyle tanışmıştım ama gerçekte kiminle arkadaştım? Bilmiyordum.\n\nÇoğu günler aynı cümleleri tekrarlayarak kendimi tanıtırdım. Herkes gibi kendimi bir sunum yaparmışçasına anlatırdım. En iyi göründüğüm kıyafetleri giyer, en iyi bildiğimiz konuları konuşurdum. Herkes gibi karşımdakini güldürür, ona kendini dünyanın en iyi insanıymış gibi hissettirirdim. Bunlar bir insanla ilk tanıştığımızda çok etkilidir. Onlara böyle hissettirirsek bizi severler, ancak böyle hissetmelerini sağlarsak bizimle kalırlar.\n\nEve döndüğümde bu dünyayı tamamen geride bıraktım ve kendimle baş başa kaldım. Üniversite çok garip bir yerdi. Yepyeni bir dünyada kendine yer bulmak için yer edinmiş insanları takip ediyordunuz. Peki gerçekten istediğiniz bu muydu? Var olmak istediğiniz yer? Ben kendim için bundan emin değildim.\n\nOn dokuz yaşındaydım ve bir ömrü kendimi ait hissetmediğim bir dünyada geçirmiştim. Lisede arkadaşlarımın arasında otururken aniden oradan uzaklaşır ve sessizleşirdim. Yurt koridorlarında yürürken diğer insanlara bakar, kendime onların arasında bir yer bulmaya çalışırdım. Bütün bu sıkıntılarım biriyle denk geldiğimde kalbimin içine kaçardı. Bu düşünceler hiç aklımdan geçmemiş gibi gülümser, sohbet ederdim.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8320),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5400),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/22.jpeg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8321),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5401),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Ya Yeni Bir Dünya Yoksa?",
@@ -735,12 +735,12 @@ namespace Haber35.DAL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("1508c65f-40f5-4ede-910a-92ce8082ad11"),
+                            Id = new Guid("28dc2000-dc00-45cd-8cce-31e6c2ea9624"),
                             Content = "Aralarında Fransız ressam Marcel Duchamp’ın da (28 Temmuz 1887–2 Kasım 1968) bulunduğu, dönemin sınırlayıcı kalıplarından bunalan bir grup sanatçı 1917'de “Bağımsız Sanatçılar” adıyla bir dernek kurdu. Dernek, kuruluşunun hemen ardından, “Jüri yok, ödül yok” mottosuyla büyük bir sergi düzenleyeceğinin duyurusunu yaptı.\n\nBildiri afişinde, gönderilen tüm sanat eserlerinin herhangi bir jüri değerlendirmesine tabi tutulmadan alfabetik sırayla asılacağı bildirilmişti. Sergiye 1.235 sanatçı tarafından 2.125 sanat eseri gönderildi ve içlerinden sadece bir tanesi reddedildi; Fountain.\n\nDuchamp sergiye göndereceği sanat eserini hazırlamak için evinden çıkıp, tuvalet malzemeleri satan bir dükkana gitti. Gözüne kestirdiği bir pisuvarı satın aldı, stüdyosuna götürdü, imzaladı ve sergiye gönderdi. Gönderdiği pisuvara, imzasını atmaktan ve Fountain (çeşme) olarak adlandırmaktan başka herhangi bir dokunuş yapmamıştı, üstelik onun üretim aşamasına da hiçbir şekilde dahil olmuş değildi. Onun Fountain’i, herhangi bir fabrikada sıradan bir üretim sürecinden geçmiş, diğer milyonlarca pisuvardan hiçbir farkı olmayan başka bir pisuvardı sadece.\n\nSergi komitesi verdiği sözü tutmadı ve Fountain’in bir sanat eseri olmadığını, dolayısıyla sergilenemeyeceğini belirtti ve eseri geri çevirdi. Bu olay, zamanın Dadaistleri arasında bir curcunaya sebep oldu ve Duschamp, Bağımsız Sanatçılar Derneği'nin yönetim kurulundaki görevinden istifa etti.\n\nAncak bu, Duchamp’ın ortalığı karıştıran ilk eseri değildi; bu olaydan önce de sanat dünyasında doğru olarak kabul edilen her şeyi defalarca sorgulamış ve “Sanat nedir?” sorusunu cevaplamak için sanat dünyasına meydan okumuştu. Bu olaydan on iki sene önce Fransa’da da olduğu gibi.\n\nFransa’da, sanatçı bir ailede dünyaya gelmişti; tüm kardeşleri sanatçıydı ve o da kardeşlerinin ayak izlerini takip etmeye karar verdi. Académie Julian sanat okuluna başladı, ancak burada derslere girmek yerine tüm zamanını bilardo oynayarak geçirmeyi daha çekici bulmuştu.",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8326),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5404),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             ImagePath = "/Images/Post/23.jpeg",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(8328),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(5405),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true,
                             Title = "Bir Pisuvar Sanat Tarihini Nasıl Değiştirdi",
@@ -790,101 +790,101 @@ namespace Haber35.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("9dfc7992-4137-401a-acec-3d3ef05f8da0"),
+                            Id = new Guid("ee8fe7a4-5af7-4421-a1c5-463a6e5267d9"),
                             CategoryName = "Teknoloji",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(264),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 408, DateTimeKind.Local).AddTicks(9974),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(1327),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(698),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true
                         },
                         new
                         {
-                            Id = new Guid("7b598e88-5f2e-4f55-9c4b-528c801ae4f6"),
+                            Id = new Guid("7d22d895-23dc-4f8b-8be8-19f1505e3409"),
                             CategoryName = "Spor",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2881),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1743),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2884),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1745),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true
                         },
                         new
                         {
-                            Id = new Guid("a5116780-2d20-43e3-afcb-a6817828a114"),
+                            Id = new Guid("6228ea4c-058c-4fa8-a77c-fcd47382c2f3"),
                             CategoryName = "Bilim",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2890),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1749),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2892),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1750),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true
                         },
                         new
                         {
-                            Id = new Guid("3149d32e-e2f7-4ce8-b6fe-b85df4917406"),
+                            Id = new Guid("1a45fde8-b211-400e-9af4-2f13e7445cc7"),
                             CategoryName = "Tarih",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2896),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1760),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2898),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1761),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true
                         },
                         new
                         {
-                            Id = new Guid("2464302c-deb1-433e-85b7-7d637da7e99c"),
+                            Id = new Guid("df8ba537-4b03-4eee-bf2e-f6e161940f1a"),
                             CategoryName = "Yazılım",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2903),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1764),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2904),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1765),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true
                         },
                         new
                         {
-                            Id = new Guid("31f5da2a-cf15-4281-9231-b9090cfe0700"),
+                            Id = new Guid("0fa7e735-4576-4703-9a57-c5e4f5f23988"),
                             CategoryName = "Sağlık",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2909),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1769),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2910),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1770),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true
                         },
                         new
                         {
-                            Id = new Guid("5df5cb60-3b6f-48b7-b3a9-2c9a21b958a8"),
+                            Id = new Guid("6c72ca1b-cd2c-413f-b2a3-067a523aecf3"),
                             CategoryName = "Beslenme",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2915),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1773),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2917),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1774),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true
                         },
                         new
                         {
-                            Id = new Guid("de2fbce7-96a1-48fe-85cf-63a4c2e834f7"),
+                            Id = new Guid("6733ae52-dba5-4c6d-bf3e-83cee6bbeb32"),
                             CategoryName = "Eğitim",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2921),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1777),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2923),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1778),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true
                         },
                         new
                         {
-                            Id = new Guid("11209869-03ad-44e3-9203-df14be8799d7"),
+                            Id = new Guid("b978f48f-8790-4302-92af-5d7e7b98806a"),
                             CategoryName = "Kültür Sanat",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2929),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1781),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2931),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1782),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true
                         },
                         new
                         {
-                            Id = new Guid("648fc994-92b1-4b8a-8c14-8b0747519220"),
+                            Id = new Guid("206a274b-a377-44e6-8b39-8dffdb7eee9a"),
                             CategoryName = "Edebiyat",
-                            CreatedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2938),
+                            CreatedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1786),
                             CreatorUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
-                            ModifiedDate = new DateTime(2022, 11, 18, 23, 51, 7, 691, DateTimeKind.Local).AddTicks(2940),
+                            ModifiedDate = new DateTime(2022, 11, 19, 3, 18, 8, 409, DateTimeKind.Local).AddTicks(1787),
                             ModifierUserId = "05fcadae-fa72-4a86-89ee-2a4943ad265d",
                             Status = true
                         });
@@ -914,6 +914,7 @@ namespace Haber35.DAL.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("ModifiedDate")
@@ -923,15 +924,12 @@ namespace Haber35.DAL.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -969,8 +967,8 @@ namespace Haber35.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "8dc4c747-8663-498c-9b88-b52c59212305",
-                            ConcurrencyStamp = "f1aca18b-0889-4c1a-8386-48a752306740",
+                            Id = "1877262c-36a5-44d7-acc0-9e728c513208",
+                            ConcurrencyStamp = "343bf0d2-3d7e-46a4-81d9-0598960f2510",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
