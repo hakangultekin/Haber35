@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 
 namespace Haber35.UI.Controllers
 {
+    [Authorize]
     public class ArticleController : Controller
     {
         private readonly IArticleService _articleService;
@@ -28,19 +29,18 @@ namespace Haber35.UI.Controllers
             _notifyService = notifyService;
         }
 
-        [Authorize]
         public async Task<IActionResult> Index()
         {
             return View(_mapper.Map<IEnumerable<ArticleListVM>>(await _articleService.GetAllAsync()));
         }
 
-        [Authorize]
+        
         public async Task<IActionResult> PassiveArticles()
         {
             return View(_mapper.Map<IEnumerable<PassiveArticleVM>>(await _articleService.GetAllPassivesAsync()));
         }
 
-        [Authorize, HttpGet]
+        [HttpGet]
         public async Task<IActionResult> Create()
         {
             ViewBag.Categories = await _categoryService.GetAllAsync();
@@ -48,7 +48,7 @@ namespace Haber35.UI.Controllers
         }
 
 
-        [Authorize, HttpPost]
+        [HttpPost]
         public async Task<IActionResult> Create(ArticleCreateVM model)
         {
             if (!ModelState.IsValid)
@@ -82,14 +82,14 @@ namespace Haber35.UI.Controllers
             return RedirectToAction(controllerName:"Admin", actionName:"Index");
         }
 
-        [Authorize, HttpGet]
+        [HttpGet]
         public async Task<IActionResult> Update(Guid id)
         {
             ViewBag.Categories = await _categoryService.GetAllAsync();
             return View(_mapper.Map<ArticleUpdateVM>(await _articleService.GetByIdAsync(id)));
         }
 
-        [Authorize, HttpPost]
+        [HttpPost]
         public async Task<IActionResult> Update(ArticleUpdateVM model)
         {
             if (!ModelState.IsValid)
@@ -123,7 +123,7 @@ namespace Haber35.UI.Controllers
 
         }
 
-        [Authorize]
+        
         public async Task<IActionResult> Delete(Guid id)
         {
             bool result = await _articleService.DeleteAsync(id);
@@ -133,7 +133,7 @@ namespace Haber35.UI.Controllers
             return RedirectToAction(controllerName:"Admin", actionName:"Index");
         }
 
-        [Authorize]
+        
         public async Task<IActionResult> Active(Guid id)
         {
             bool result = await _articleService.ActiveArticleAsync(id);
@@ -143,7 +143,7 @@ namespace Haber35.UI.Controllers
             return RedirectToAction(controllerName: "Admin", actionName: "Index");
         }
 
-        [Authorize]
+        
         public async Task<IActionResult> GetByCategory(Guid catgoryId)
         {
             CategoryDTO cat = await _categoryService.GetByIdAsync(catgoryId);

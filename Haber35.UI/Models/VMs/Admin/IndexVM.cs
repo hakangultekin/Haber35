@@ -16,14 +16,7 @@ namespace Haber35.UI.Models.VMs.Admin
         public int Viewer { get; set; }
         public DateTime CreatedDate { get; set; }
         public List<CategoryDTO> Categories = new List<CategoryDTO>();
-        public string GetCategoriesString { get {
-            StringBuilder sb = new StringBuilder();
-                foreach (var item in Categories)
-                {
-                    sb.Append(item.CategoryName + ",");
-                }
-            return sb.ToString();
-        } }
+        public string GetCategoriesString { get => string.Join(',', Categories.Select(x => x.CategoryName)); }
     }
 }
 

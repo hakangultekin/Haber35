@@ -77,6 +77,7 @@ namespace Haber35.UI.Controllers
         [HttpGet]
         public IActionResult Login()
         {
+            if (User.Identity.IsAuthenticated) RedirectToAction("Index");
             return View();
         }
 
@@ -173,11 +174,11 @@ namespace Haber35.UI.Controllers
         {
             AppUser user = await _userManager.GetUserAsync(User);
 
-            if (user == null) return View("Login");
+            if (user == null) return RedirectToAction("Index");
 
             await claimService.RemoveClaims(user);
             await _signInManager.SignOutAsync();
-            return View("Index");
+            return RedirectToAction("Index");
         }
 
         private void LogResultErrors(IdentityResult result)
