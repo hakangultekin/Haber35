@@ -57,6 +57,9 @@ namespace Haber35.UI.Controllers
                 Technology = _mapper.Map<List<ArticleVM>>(await _articleService.GetArticlesByCategoryName("Teknoloji", 5))
             };
 
+            var aa = _mapper.Map<List<ArticleVM>>(await _articleService.GetRecentArticles());
+
+
             return View(vm);
         }
 
@@ -86,20 +89,6 @@ namespace Haber35.UI.Controllers
             ViewBag.PopularArticles = _mapper.Map<List<ArticleVM>>(await _articleService.GetPopularArticles()).Take(10);
             await _articleService.IncreaseViewerCount(id);
             return View(article);
-        }
-
-        public async Task<IActionResult> CreateArticleComment(CommentCreateDTO commentCreateDTO)
-        {
-            bool result = await _commentService.CreateAsync(commentCreateDTO);
-            if (result) _notifyService.Success("Yorumunuz eklendi");
-            else _notifyService.Error("Yorum ekleme başarısız oldu!");
-            return RedirectToAction("ArticleDetail", new { id = commentCreateDTO.ArticleId });
-        }
-
-        [Authorize]
-        public async Task<IActionResult> DeleteArticleComment(Guid id)
-        {
-            return Json(new {result = await _commentService.DeleteAsync(id) });
         }
 
         [HttpGet]

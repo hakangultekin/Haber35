@@ -4,17 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Haber35.UI.Models.VMs.Comment
+namespace Haber35.BLL.DTOs
 {
-    public class CommentVM
+    public class CommentListDTO
     {
         public Guid Id { get; set; }
         public Guid ArticleId { get; set; }
+        public string ArticleTitle { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public string Description { get; set; }
         public DateTime CreatedDate { get; set; }
-
     }
 }
-

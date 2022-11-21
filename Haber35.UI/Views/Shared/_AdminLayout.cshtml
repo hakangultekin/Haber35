@@ -84,6 +84,19 @@
                 </li>
 
                 <li>
+                    <a href="javascript: void(0);"><i data-feather="grid" class="align-self-center menu-icon"></i><span>Yorum İşlemleri</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                    <ul class="nav-second-level" aria-expanded="false">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Comment" asp-action="Index"><i class="ti-control-record"></i>Yorum Listesi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Comment" asp-action="DeletedComments"><i class="ti-control-record"></i>Silinmiş Yorum Listesi</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li>
                     <a asp-controller="Home" asp-action="Index"> <i data-feather="log-out" class="align-self-center menu-icon text-light"></i><span>Siteye Geri Dön</span></a>
                 </li>
 

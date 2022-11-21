@@ -37,6 +37,7 @@ namespace Haber35.UI.Profiles
             CreateMap<CommentDTO, CommentVM>();
             CreateMap<CommentCreateVM, CommentCreateDTO>();
             CreateMap<CommentUpdateVM, CommentUpdateDTO>();
+            CreateMap<CommentListDTO, CommentListVM>();
         }
     }
 }

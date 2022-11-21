@@ -10,6 +10,18 @@ namespace Haber35.BLL.Abstracts
     public interface ICommentService
     {
         /// <summary>
+        /// Bütün yorumları getirir
+        /// </summary>
+        /// <returns>List<CommentListDTO> türünde data objesi</returns>
+        Task<List<CommentListDTO>> GetAllComments();
+
+        /// <summary>
+        /// Bütün silinen yorumları getirir
+        /// </summary>
+        /// <returns>List<CommentListDTO> türünde data objesi</returns>
+        Task<List<CommentListDTO>> GetAllDeletedComments();
+
+        /// <summary>
         /// Yeni bir yorum oluşturur.
         /// </summary>
         /// <param name="commentCreateDTO">commentCreateDTO türünde data objesi</param>
@@ -43,5 +55,12 @@ namespace Haber35.BLL.Abstracts
         /// <param name="commentId">Yorum Id'si</param>
         /// <returns>bool türünde işlem sonucu</returns>
         Task<bool> DeleteAsync(Guid commentId);
+
+        /// <summary>
+        /// Id'si verilen silinmiş yorumu aktifleştirir.
+        /// </summary>
+        /// <param name="commentId">Yorum Id'si</param>
+        /// <returns>CommentDTO türünde data objesi</returns>
+        Task<bool> ActiveAsync(Guid commentId);
     }
 }

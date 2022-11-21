@@ -72,8 +72,8 @@ namespace Haber35.DAL.Repositories
             IQueryable<T> query = db.Set<T>();
             if (includes != null) query = includes(query);
             if (expression != null) query = query.Where(expression);
-            if (limit > 0) query = query.Take(limit);
-            if (orderBy != null) return await orderBy(query).Select(selector).ToListAsync();
+            if (orderBy != null) query = orderBy(query);
+            if (limit > 0) return await query.Select(selector).Take(limit).ToListAsync();
             else return await query.Select(selector).ToListAsync();
         }
 

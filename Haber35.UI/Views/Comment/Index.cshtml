@@ -1,0 +1,92 @@
+﻿@using Haber35.UI.Models.VMs.Comment
+@model IEnumerable<CommentListVM>
+
+@{
+    ViewData["Title"] = "Kategori Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<!-- Page-Title -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-title-box">
+            <div class="row">
+                <div class="col">
+                    <h4 class="page-title">Yorum Listesi</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Anasayfa</a></li>
+                        <li class="breadcrumb-item active">Yorum Listesi</li>
+                    </ol>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end page-title-box-->
+    </div><!--end col-->
+</div><!--end row-->
+<!-- end page title end breadcrumb -->
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered mb-0 table-centered">
+                        <thead>
+                            <tr>
+                                <th style="width:200px">Oluşturulma Tarihi</th>
+                                <th>Haber Başlığı</th>
+                                <th>Kullanıcı Adı</th>
+                                <th>Yorum</th>
+                                <th style="width:200px">İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.CreatedDate.ToString()</td>
+                                    <td><a asp-controller="Home" asp-action="ArticleDetail" asp-route-id="@item.ArticleId">@item.ArticleShortTitle</a></td>
+                                    <td>@item.Name</td>
+                                    <td>@item.Description</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-soft-danger btn-circle" data-toggle="modal" data-target="#delete-modal" onclick="setDeleteId('@item.Id')"><i class="dripicons-trash" aria-hidden="true"></i></button>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table><!--end /table-->
+                </div><!--end /tableresponsive-->
+            </div><!--end card-body-->
+        </div><!--end card-->
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="delete-modal-CenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="delete-modal-CenterTitle">Yorum Silinecek</h5>
+            </div>
+            <div class="modal-body">
+                <p>Yorum silinecek onaylıyor musunuz?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Vazgeç</button>
+                <a id="delete-comment-btn" class="btn btn-danger">Sil</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+<script>
+    const setDeleteId = (id) =>{
+        $('#delete-comment-btn').attr('href', "@Url.Action(controller:"Comment", action:"Delete")" + "?id=" + id);
+    };
+</script>
+}

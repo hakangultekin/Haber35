@@ -25,6 +25,7 @@ namespace Haber35.BLL.AutoMapper
             CreateMap<CommentUpdateDTO, Comment>();
             CreateMap<CommentCreateDTO, Comment>();
             CreateMap<Comment, CommentDTO>();
+            CreateMap<Comment, CommentListDTO>();
 
         }
     }

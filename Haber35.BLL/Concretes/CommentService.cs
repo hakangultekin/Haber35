@@ -21,6 +21,44 @@ namespace Haber35.BLL.Concretes
             _mapper = mapper;
         }
 
+        public async Task<List<CommentListDTO>> GetAllComments()
+        {
+            List<CommentListDTO> list = await _commentRepository.GetFilteredList(
+                selector: x => new CommentListDTO
+                {
+                    Id = x.Id,
+                    ArticleId = x.ArticleId,
+                    CreatedDate = x.CreatedDate,
+                    Description = x.Description,
+                    Email = x.Email,
+                    Name = x.Name,
+                    ArticleTitle = x.Article.Title
+                },
+                expression: x => x.Status == true,
+                orderBy: x => x.OrderByDescending(a => a.CreatedDate)
+                );
+            return list;
+        }
+
+        public async Task<List<CommentListDTO>> GetAllDeletedComments()
+        {
+            List<CommentListDTO> list = await _commentRepository.GetFilteredList(
+                selector: x => new CommentListDTO
+                {
+                    Id = x.Id,
+                    ArticleId = x.ArticleId,
+                    CreatedDate = x.CreatedDate,
+                    Description = x.Description,
+                    Email = x.Email,
+                    Name = x.Name,
+                    ArticleTitle = x.Article.Title
+                },
+                expression: x => x.Status == false,
+                orderBy: x => x.OrderByDescending(a => a.CreatedDate)
+                );
+            return list;
+        }
+
         public async Task<bool> CreateAsync(CommentCreateDTO commentCreateDTO)
         {
             Comment comment = new();
@@ -75,6 +113,13 @@ namespace Haber35.BLL.Concretes
             Comment comment = await _commentRepository.GetWhere(x => x.Id == commentUpdateDTO.Id);
             comment = _mapper.Map(commentUpdateDTO, comment);
 
+            return await _commentRepository.UpdateAsync(comment);
+        }
+
+        public async Task<bool> ActiveAsync(Guid commentId)
+        {
+            Comment comment = await _commentRepository.GetWhere(x => x.Id == commentId);
+            comment.Status = true;
             return await _commentRepository.UpdateAsync(comment);
         }
     }

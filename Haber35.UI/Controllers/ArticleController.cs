@@ -74,6 +74,7 @@ namespace Haber35.UI.Controllers
             bool result = await _articleService.CreateAsync(_mapper.Map<ArticleCreateDTO>(model));
             if (!result)
             {
+                ViewBag.Categories = await _categoryService.GetAllAsync();
                 _notifyService.Error("Haber oluşturulamadı!");
                 return View(model);
             }
