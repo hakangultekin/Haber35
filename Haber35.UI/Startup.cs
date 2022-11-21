@@ -64,7 +64,6 @@ namespace Haber35.UI
             services.AddTransient<IAppUserRepository, AppUserRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<ICommentRepository, CommentRepository>();
-            services.AddScoped<IAppUserService, AppUserService>();
             services.AddScoped<IArticleService, ArticleService>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<ICommentService, CommentService>();

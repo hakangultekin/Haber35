@@ -29,13 +29,13 @@ namespace Haber35.BLL.Concretes
             return await _commentRepository.CreateAsync(comment);
         }
 
-        public async Task<bool> DeleteAsync(Guid id)
+        public async Task<bool> DeleteAsync(Guid commentId)
         {
-            Comment comment = await _commentRepository.GetWhere(a => a.Id == id);
+            Comment comment = await _commentRepository.GetWhere(a => a.Id == commentId);
             return await _commentRepository.DeleteAsync(comment);
         }
 
-        public async Task<CommentDTO> GetByIdAsync(Guid id)
+        public async Task<CommentDTO> GetByIdAsync(Guid commentId)
         {
             CommentDTO commentDto = await _commentRepository.GetFilteredFirstOrDefault(
                 selector: x => new CommentDTO
@@ -47,12 +47,12 @@ namespace Haber35.BLL.Concretes
                     Email = x.Email,
                     Name = x.Name,
                 },
-                expression: x => x.Id == id
+                expression: x => x.Id == commentId
                 );
             return commentDto;
         }
 
-        public async Task<List<CommentDTO>> GetCommentsByArticleAsync(Guid id)
+        public async Task<List<CommentDTO>> GetCommentsByArticleAsync(Guid articleId)
         {
             List<CommentDTO> list = await _commentRepository.GetFilteredList(
                 selector: x => new CommentDTO
@@ -64,7 +64,7 @@ namespace Haber35.BLL.Concretes
                     Email = x.Email,
                     Name = x.Name,
                 },
-                expression: x => x.Status == false && x.ArticleId == id,
+                expression: x => x.Status == true && x.ArticleId == articleId,
                 orderBy: x => x.OrderByDescending(a => a.CreatedDate)
                 );
             return list;

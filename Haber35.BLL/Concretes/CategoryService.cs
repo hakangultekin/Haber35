@@ -21,9 +21,9 @@ namespace Haber35.BLL.Concretes
             _mapper = mapper;
         }
 
-        public async Task<bool> ActiveCategoryAsync(Guid id)
+        public async Task<bool> ActiveCategoryAsync(Guid categoryId)
         {
-            Category category = await _categoryRepository.GetWhere(a => a.Id == id);
+            Category category = await _categoryRepository.GetWhere(a => a.Id == categoryId);
             category.Status = true;
             return await _categoryRepository.UpdateAsync(category);
         }
@@ -36,9 +36,9 @@ namespace Haber35.BLL.Concretes
             return await _categoryRepository.CreateAsync(category);
         }
 
-        public async Task<bool> DeleteAsync(Guid id)
+        public async Task<bool> DeleteAsync(Guid categoryId)
         {
-            Category category = await _categoryRepository.GetWhere(a => a.Id == id);
+            Category category = await _categoryRepository.GetWhere(a => a.Id == categoryId);
             return await _categoryRepository.DeleteAsync(category);
         }
 
@@ -73,7 +73,7 @@ namespace Haber35.BLL.Concretes
             return list;
         }
 
-        public async Task<CategoryDTO> GetByIdAsync(Guid id)
+        public async Task<CategoryDTO> GetByIdAsync(Guid categoryId)
         {
             CategoryDTO categoryDto = await _categoryRepository.GetFilteredFirstOrDefault(
                 selector: x => new CategoryDTO
@@ -82,7 +82,7 @@ namespace Haber35.BLL.Concretes
                     CategoryName= x.CategoryName,
                     CreatedDate= x.CreatedDate
                 },
-                expression: x => x.Id == id
+                expression: x => x.Id == categoryId
                 );
             return categoryDto;
         }

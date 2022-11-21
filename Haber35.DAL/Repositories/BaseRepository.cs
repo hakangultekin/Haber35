@@ -28,15 +28,29 @@ namespace Haber35.DAL.Repositories
 
         public async Task<bool> CreateAsync(T entity)
         {
-            await db.Set<T>().AddAsync(entity);
-            return await db.SaveChangesAsync() > 0;
+            try
+            {
+                await db.Set<T>().AddAsync(entity);
+                return await db.SaveChangesAsync() > 0;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public async Task<bool> DeleteAsync(T entity)
         {
-            entity.Status = false;
-            db.Set<T>().Update(entity);
-            return await db.SaveChangesAsync() > 0;
+            try
+            {
+                entity.Status = false;
+                db.Set<T>().Update(entity);
+                return await db.SaveChangesAsync() > 0;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public async Task<List<T>> GetAllWhere(Expression<Func<T, bool>> expression)
@@ -70,13 +84,28 @@ namespace Haber35.DAL.Repositories
 
         public async Task<bool> UpdateAsync(T entity)
         {
-            db.Set<T>().Update(entity);
-            return await db.SaveChangesAsync() > 0;
+            try
+            {
+                db.Set<T>().Update(entity);
+                return await db.SaveChangesAsync() > 0;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public async Task<bool> ExecuteRawSqlQuery(string query)
         {
-            return await db.Database.ExecuteSqlRawAsync(query) > 0;
+            try
+            {
+                return await db.Database.ExecuteSqlRawAsync(query) > 0;
+            }
+            catch
+            {
+                return false;
+            }
+            
         }
     }
 }

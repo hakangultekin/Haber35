@@ -89,7 +89,7 @@
 
                             </div>
                         </div>
-                        <p style="text-align:justify" class="has-drop-cap-fluid">
+                        <p class="has-drop-cap-fluid text-justify">
                             @Model.Content
                         </p>
 
@@ -125,22 +125,28 @@
                             <li class="comment">
                                 <aside class="comment-body">
                                     <div class="comment-meta">
-                                        <div class="comment-author vcard">
-                                            <b class="fn">@item.Name</b>
-                                            <span class="says">diyor ki:</span>
+                                        <div class="comment-author vcard d-flex justify-content-between">
+                                            <div>
+                                                <b class="fn">@item.Name</b>
+                                                <span class="text-sm text-muted font-italic"> diyor ki:</span>
+                                            </div>
+                                            @if (User.Identity.IsAuthenticated)
+                                            {
+                                                <button type="button" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#delete-modal" onclick="setDeleteId('@item.Id')">
+                                                    <i class="fa fa-lg fa-trash"></i>
+                                                </button>
+                                            }
                                         </div>
-
                                         <div class="comment-metadata">
-                                            <a href="#">
-                                                <span>@item.CreatedDate</span>
-                                            </a>
+                                            <span class="text-muted text-sm">@item.CreatedDate</span>
                                         </div>
                                     </div>
 
                                     <div class="comment-content">
-                                        <p>
+                                        <p class="text-justify">
                                             @item.Description
                                         </p>
+
                                     </div>
                                 </aside>
                             </li>
@@ -153,6 +159,7 @@
                             <p class="comment-notes">
                                 <span id="email-notes">Gerekli alanlar işaretlenmiştir.</span>
                                 <span class="required">*</span>
+                                <span class="text-muted text-sm font-italic">(Mail Adresiniz Paylaşılmayacaktır.)</span>
                             </p>
                             <input type="hidden" name="ArticleId" value="@Model.Id" />
                             <p class="comment-form-comment">
@@ -293,4 +300,49 @@
 
 </section>
 
+
+@if (User.Identity.IsAuthenticated)
+{
+    <!-- Modal -->
+    <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="delete-modal-CenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="delete-modal-CenterTitle">Yorum Silinecek</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Yorum silinecek onaylıyor musunuz?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Vazgeç</button>
+                    <button id="delete-comment-btn" type="button" class="btn btn-primary" data-dismiss="modal" onclick="deleteArticle()">Sil</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts{
+<script>
+    let deletingCommentId = ""
+    const setDeleteId = (id) => deletingCommentId = id;
+
+    const deleteArticle = () => {
+        $.ajax({
+            url : "@Url.Action("DeleteArticleComment")" + "?id=" + deletingCommentId,
+            method : "get",
+            success : function(response){
+                if(response.result){
+                    location.reload();
+                }
+                else{
+                    notyf.error("Yorum silinirken hata oluştu!")
+                }
+            },
+            error : notyf.error("Lütfen giriş yapın.")
+
+        })
+    }
+</script>
+}
+}
 

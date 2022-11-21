@@ -8,6 +8,7 @@ using Haber35.UI.Models.VMs;
 using Haber35.UI.Models.VMs.Article;
 using Haber35.UI.Models.VMs.Home;
 using Haber35.UI.Utils;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -76,6 +77,12 @@ namespace Haber35.UI.Controllers
         public async Task<IActionResult> ArticleDetail(Guid id)
         {
             ArticleDetailVM article = _mapper.Map<ArticleDetailVM>(await _articleService.GetArticleWithDetail(id));
+            if (article == null)
+            {
+                _notifyService.Error("Haber bulunamadı!");
+                return View("Index");
+            }
+
             ViewBag.PopularArticles = _mapper.Map<List<ArticleVM>>(await _articleService.GetPopularArticles()).Take(10);
             await _articleService.IncreaseViewerCount(id);
             return View(article);
@@ -87,6 +94,12 @@ namespace Haber35.UI.Controllers
             if (result) _notifyService.Success("Yorumunuz eklendi");
             else _notifyService.Error("Yorum ekleme başarısız oldu!");
             return RedirectToAction("ArticleDetail", new { id = commentCreateDTO.ArticleId });
+        }
+
+        [Authorize]
+        public async Task<IActionResult> DeleteArticleComment(Guid id)
+        {
+            return Json(new {result = await _commentService.DeleteAsync(id) });
         }
 
         [HttpGet]

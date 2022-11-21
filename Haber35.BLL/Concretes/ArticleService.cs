@@ -25,9 +25,9 @@ namespace Haber35.BLL.Concretes
             _mapper = mapper;
         }
 
-        public async Task<bool> ActiveArticleAsync(Guid id)
+        public async Task<bool> ActiveArticleAsync(Guid articleId)
         {
-            Article article = await _articleRepository.GetWhere(a => a.Id == id);
+            Article article = await _articleRepository.GetWhere(a => a.Id == articleId);
             article.Status = true;
             return await _articleRepository.UpdateAsync(article);
         }
@@ -45,9 +45,9 @@ namespace Haber35.BLL.Concretes
             return await _articleRepository.CreateAsync(article);
         }
 
-        public async Task<bool> DeleteAsync(Guid id)
+        public async Task<bool> DeleteAsync(Guid articleId)
         {
-            Article article = await _articleRepository.GetWhere(a => a.Id == id);
+            Article article = await _articleRepository.GetWhere(a => a.Id == articleId);
             return await _articleRepository.DeleteAsync(article);
         }
 
@@ -130,7 +130,7 @@ namespace Haber35.BLL.Concretes
             return list;
         }
 
-        public async Task<ArticleDTO> GetByIdAsync(Guid id)
+        public async Task<ArticleDTO> GetByIdAsync(Guid articleId)
         {
             ArticleDTO article = await _articleRepository.GetFilteredFirstOrDefault(
                 selector: x => new ArticleDTO
@@ -144,7 +144,7 @@ namespace Haber35.BLL.Concretes
                     Categories = _mapper.Map<List<CategoryDTO>>(x.Categories),
                 },
                 includes: x => x.Include(c => c.Categories),
-                expression: x => x.Id == id
+                expression: x => x.Id == articleId
                 );
             return article;
         }
@@ -226,6 +226,7 @@ namespace Haber35.BLL.Concretes
                 includes: x => x.Include(c => c.Categories).Include(cm => cm.Comments).Include(u => u.CreatorUser),
                 expression: x => x.Id == articleId
             );
+            article.Comments = article.Comments.Where(c => c.Status == true).ToList();
             return article;
         }
 
