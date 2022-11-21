@@ -25,9 +25,14 @@
                                             <img src="@Model.Populars[i].ImagePath" class="img-fluid" alt="">
                                         </a>
                                         <div class="card__post__content bg__post-cover">
-                                            <div class="card__post__category">
-                                                @(string.Join(',', @Model.Populars[i].Categories.Select(x => x.CategoryName)))
-                                            </div>
+                                            @foreach (var cat in Model.Populars[i].Categories)
+                                            {
+                                                <a asp-action="CategoryArticles" asp-route-id="@cat.Id">
+                                                    <div class="card__post__category position-relative">
+                                                        @cat.CategoryName
+                                                    </div>
+                                                </a>
+                                            }
                                             <div class="card__post__title">
                                                 <h2>
                                                     <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[i].Id">
@@ -66,9 +71,14 @@
                                         <img src="@Model.Populars[j].ImagePath" class="img-fluid" alt="">
                                     </a>
                                     <div class="card__post__content bg__post-cover">
-                                        <div class="card__post__category">
-                                            @(string.Join(',', @Model.Populars[j].Categories.Select(x => x.CategoryName)))
-                                        </div>
+                                        @foreach (var cat in Model.Populars[j].Categories)
+                                        {
+                                            <a asp-action="CategoryArticles" asp-route-id="@cat.Id">
+                                                <div class="card__post__category position-relative">
+                                                    @cat.CategoryName
+                                                </div>
+                                            </a>
+                                        }
                                         <div class="card__post__title">
                                             <h5>
                                                 <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[j].Id">
@@ -170,13 +180,18 @@
                                             <img src="@Model.Recents[i].ImagePath" class="img-fluid" alt="">
                                         </a>
                                         <div class="card__post__content bg__post-cover">
-                                            <div class="card__post__category">
-                                                @(string.Join(',', @Model.Recents[i].Categories.Select(x => x.CategoryName)))
-                                            </div>
+                                            @foreach (var cat in Model.Recents[i].Categories)
+                                            {
+                                                <a asp-action="CategoryArticles" asp-route-id="@cat.Id">
+                                                    <div class="card__post__category position-relative">
+                                                        @cat.CategoryName
+                                                    </div>
+                                                </a>
+                                            }
                                             <div class="card__post__title">
                                                 <h5>
-                                                    <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[i].Id">
-                                                        @Model.Populars[i].ShortTitle
+                                                    <a asp-action="ArticleDetail" asp-route-id="@Model.Recents[i].Id">
+                                                        @Model.Recents[i].ShortTitle
                                                     </a>
                                                 </h5>
                                             </div>
@@ -398,12 +413,14 @@
                                             @(i+1)
                                         </span>
                                     </div>
-                                    <a href="#" class="category">
-                                        @(string.Join(',', @Model.Populars[i].Categories.Select(x => x.CategoryName)))
-                                    </a>
+                                    @foreach (var cat in Model.Populars[i].Categories)
+                                    {
+                                        <a asp-action="CategoryArticles" asp-route-id="@cat.Id" class="category">
+                                            @cat.CategoryName
+                                        </a>
+                                    }
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
-
                                             <h5>
                                                 <a asp-action="ArticleDetail" asp-route-id="@Model.Populars[i].Id">
                                                     @Model.Populars[i].ShortTitle
@@ -416,6 +433,28 @@
 
                         </div>
                     </aside>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <aside class="wrapper__list__article">
+                        <h4 class="border_section">Spor</h4>
+                    </aside>
+                </div>
+                <div class="col-md-12">
+                    <partial name="_SliderArticlesPartial" model=@Model.Sport></partial>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <aside class="wrapper__list__article">
+                        <h4 class="border_section">Teknoloji</h4>
+                    </aside>
+                </div>
+                <div class="col-md-12">
+                    <partial name="_SliderArticlesPartial" model=@Model.Technology></partial>
                 </div>
             </div>
         </div>

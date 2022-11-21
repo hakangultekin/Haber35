@@ -17,8 +17,6 @@ namespace Haber35.DAL.EntityConfigurations
             builder.Property(x => x.Name).IsRequired().HasMaxLength(50);
             builder.Property(x => x.Email).IsRequired();
             builder.Property(x => x.Description).IsRequired();
-            builder.Property(x => x.Id).HasDefaultValueSql("NEWID()");
-
         }
     }
 }

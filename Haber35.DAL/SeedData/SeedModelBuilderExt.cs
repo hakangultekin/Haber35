@@ -234,7 +234,7 @@ namespace Haber35.DAL.SeedData
                 CreatedDate = DateTime.Now,
                 ModifiedDate = DateTime.Now,
                 ModifierUserId = user.Id,
-                ImagePath = "/Images/Post/15.jpeg"
+                ImagePath = "/Images/Post/15.jpg"
             }; // teknoloji - sağlık - sanat
 
 
@@ -342,7 +342,46 @@ namespace Haber35.DAL.SeedData
                 ImagePath = "/Images/Post/23.jpeg"
             }; // edebiyat , sanat , tarih
 
-            builder.Entity<Article>().HasData(art1, art2, art3, art4, art5, art6, art7, art8, art9, art10, art11, art12, art13, art14, art15, art16, art17, art18, art19, art20, art21, art22, art23);
+            Article art24 = new Article
+            {
+                CreatorUserId = user.Id,
+                Title = "Sizi Başarıya Götürecek Alışkanlıklarınız Var Mı?",
+                Content = "Ünlü bir Ceo, profesyonel bir sporcu, altın çocuk bir girişimci ya da mesleğinin en üst seviyesinde ilerleyen herkes için geçerli olabilecek şey, bir gün uyandıklarında şimdiki pozisyonlarında bulundukları şansa sahip olmadıklarıdır. Bazılarının gülünç bir şekilde üstün yetenekli olduğu ve bugüne kadar yaptıkları başarılı işlerden dolayı hedef alındığı ama daha da derinlerde kazanmaya devam ettiği zaman, alışkanlıkların nihayetinde ne olduğunun farkına varırsınız. Çünkü onlar, kendilerine başarı getiren alışkanlıklarını sürdürdüler ve başarılarını bu devamlılık getirdi.Geleceğin başarısını sağlamak için birinci sınıf alışkanlıkları benimsemekten ve bunlar hakkında günlük olarak ustalaşmaktan daha önemli bir şey yoktur. Bu yüzden, son derece başarılı kişilerde görülen dört alışkanlığa göz atmakta fayda var; Ne kadar büyük ya da küçük olursa olsun, başarısızlık ve sıkıntının başarıya ya da sıçrama tahtasına büyük bir başarı için bir engel olarak hizmet edip etmeyeceğine karar verirler. Oldukça başarılı bir şekilde onların yaşamları boyunca başarısızlıklarını ve olumsuzluklarını kullanarak büyümeleri ve yeni başarı seviyelerine ulaşmalarını sağlar. Bu zorlu ama çok büyük ödüllendirici alışkanlığı hayatınıza kabul edersiniz, kazanmak ve en iyi halini almak için kendinizi harika bir konuma sokarsınız. Zaman yönetimi ve bunun ne kadar önemli olduğunu her zaman duyuyoruz. Ancak ben, enerji yönetiminin zaman yönetiminden daha önemli olduğuna inanıyorum. Zamanınızı iyi yönetebilirsiniz, ancak tüm enerjinizi düşük ödüllendirici ve sıkıcı görevlere yönlendirirseniz bunun sonucu iyi olmaz. Oldukça başarılı olan zaman yönetimi hakkındaki kişiler, aynı zamanda enerjilerini her gün düzenleme konusunda da saplıntılıdırlar. Her zaman bakılması gereken önemli bir durum da, harcadığımız enerjinin geri dönüşünün bize ne kazandırdığıdır. Zaman yönetimi önemlidir ve bence zamanınızı daha iyi yönetebilmeniz için sürekli yeni yollar aramalısınız. Ancak bu yolları ararken enerji yönetiminin önemini unutmayın. Sizin önemli bir hedefe ulaşmanıza ya da amacınızı yerine getirmenize engel olmaya düşük ödüllendirici görevlerde değerli enerjinizi harcamayı bırakın. Bu nokta altı çizilmesi gereken -net- durumlardan biridir. Son derece başarılı olanların altın sırrı, hayat boyu öğrenmeye açık olmalarıdır. Üzücü bir gerçek olarak, çoğu insan hayatının belli bir noktasında sonra öğrenme alışkanlıklarını terk ediyorlar. Başarıya koşanların farkındalıkları bu nokta da belirgin bir şekilde ortaya çıkıyor. Onlar çoğu insanlar gibi olmuyorlar. Hayat boyu öğrenen bir öğrenci olmayı ve bunu yapmanın muazzam faydalarını toplayan küçük bir kesimin saflarına katılmayı taahhüt et. Büyük bir vizyona sahip olmak ve kendinizi şuandaki durumlarınızın ötesinde görmek bir alışkanlıktır, çünkü bu her gün yapmanız gereken bir şeydir. Yaşlandıkça, yıllar ilerledikçe başarısızlık ve sıkıntı yaşarız. Bir gün son derece mutlu olabilirsiniz ve ertesi gün tamamen kötü bir gün sizi bekleyebilir. Hayatınız için inanılmaz bir vizyona sahip olmak, günlük yaşamınıza dahil olmanın değil, aynı zamanda her günün her dakikasında bu vizyonu gerçekleştirmenin günlük bir alışkanlık haline gelmesi gerektiğini bilmek gerekir. Oldukça başarılı olanlar, en baştaki hedeflerini ve hayallerini görselleştirerek başarıya ulaşırlar. Görselleştirmek arzu edilen her şey için geçerli ve başarısı kanıtlanmış bir yöntemdir. Hayatınız için iyi bir vizyona sahip olmak, savaşın sadece yarısıdır. Bunu tam olarak gerçekleştirdiğinize inanmak ve o vizyonu hayata geçirmek için her gün çalışmak, her şeyi tam bir çember haline getiren ayrıntıdır. Daha önce yapmadıysanız hayatınız için kalıcı bir vizyon yaratmaya başlayın ve o vizyonu gerçeğe dönüştürmek için özenle çalışırken, kendi inancınızı da geliştirin. En iyisi olmak ve tüm potansiyelinize ulaşmak, günlük alışkanlıkları aksatmamak ile ilgilidir. Yukarıda değindiğimiz 4 farklı alışkanlığı hayatınıza kalıcı olarak dahil ederseniz, sizin için başarının altın anahtarı olabilir.",
+                Viewer = 5648,
+                Status = true,
+                CreatedDate = DateTime.Now,
+                ModifiedDate = DateTime.Now,
+                ModifierUserId = user.Id,
+                ImagePath = "/Images/Post/24.png"
+            }; // spor
+
+            Article art25 = new Article
+            {
+                CreatorUserId = user.Id,
+                Title = "Rallici deyip geçmeyin",
+                Content = "Bugün size enteresan bir karakterden bahsedeceğim: Ralli pilotu. Bu karakter özelinde, sporculukla ilişkilendirilebilecek ama tüm sporculara genellemenin zor olduğu bazı kişisel boyutlar tarif edeceğim. Bu yazının amacı kendi hikayemi anlatmak değil; belki başka bir zaman. Daha önemli bir mesajım var: Uzun yıllar içinde bulunduğum ortamlardan yola çıkarak adına “sporcu” dediğimiz kompleks karakterin, birçok spor dalıyla bağdaştırabileceğimiz ama özellikle karmaşık yapısıyla (günler süren yarışlar, pilot-kopilot uyumu, takım faktörü, finansal şartlar, doğal ortamın belirsizleri vs gibi) bir çok dinamiği içinde barındıran ralli sporunda yoğunlaşan yetkinliklerini tarif edeceğim. Bahsettiğim sportif yetkinlikler değil; sportif bir boyutu var ama aslında hayatla ilgili temel becerilerden bahsediyorum. Biraz daha açayım: Bir insanın nasıl otomobil kullandığına dikkatle bakarsanız aşağı yukarı nasıl bir insan olduğunu çözersiniz. Sakin bir sürücü çoğunlukla normal hayatında da aceleci olmayan, adımları teker teker atan bir bireydir. Benzer şekilde, bir ralli pilotu yarışta nasıl bir yaklaşım benimsiyorsa gündelik hayatında temel tercihlerini de o yönde yapar. İlk etaplarda atak yapmayan ve yarışın içinde yavaş yavaş hızlanan bir ralli pilotu muhtemelen normal hayatında da sabırlı ve risk iştahı yüksek olmayan bir pilot olarak çıkar karşınıza; yavaş bir pilottur demiyorum, sadece adım adım hızlanıp ölçülü risk alır. Yarışın ilk kilometrelerinden itibaren %100 performans göstermeye gayret eden pilot ise hayatta da benzer bir tavır takınır: Hızlı, sonuca gitmeye çalışan, gözünü budaktan sakınmayan bir kişiyle karşılaşacağınıza emin olabilirsiniz. Böyle bir bağlamda yetişen tipik bir ralli pilotu sporculuk hayatı boyunca bazı temel yetkinlikler geliştirir. Bunlar diğer spor dallarından biraz daha karmaşık bir otamda oluştuğu için çok yönlüdür. Ralli uzun soluklu bir süreçtir; sporcular genellikle 2–3 güne yayılmış zaman diliminde çok sayıda etap geçerler. Yarış tamamen kontrol altına alınmış kısa bir pistte değil, doğal bir ortamda geçer: Geçici olarak trafiğe kapatılmış köy/kasaba yolları, ormanlar, çoğu zaman nadiren kullanılan tali yollar ralli parkuru olur. Yolun yarış anındaki durumunu kimse tam olarak bilemez. Tecrübe seviyenize göre hava koşulları, zemin durumu, yolda karşılaşabileceğiniz doğal sürprizlerle ilgili bir fikriniz olabilir ama emin olamazsınız. Belirli sayıda etap geçildikten sonra sporcular özel bir “servis alanına” gelip araçlarına gerekli ayar, onarım, lastik değişimi gibi işlemler yaptırırlar; yani teknik açıdan birbiri içine geçen süreçler ve seçimler içerir. Rallide pilotun yanında görevi yol notu okumak olan bir de ko-pilot bulunur. Yani aracın içinde etkileşimli bir süreç vardır ve uyum önemlidir. Tipik bir karı-koca uyumuna benzetilebilir ama daha kritiktir, zira ko-pilota hayatınızı teslim edecek kadar güvenirsiniz. Ucuz bir spor değildir, dolayısıyla finansman ihtiyacı vardır. Ralli pilotu bu kaynağa sahip değilse finansman yaratmak için iş planını yatırımcılara anlatan bir girişimci gibi davranır. Aylar, yıllar boyu sponsor olma ihtimali olan kişi ve kurumlara proje sunduğumu, aynı süreci sürekli yaşayan onlarca örnek bilirim. Lafı uzatmadan sadede gelmek istiyorum: Ralli pilotu yapmaya çalıştığı işin doğası gereği zamanla evrilir ve karmaşık, ilk bakışta yorumlaması zor bir karakter haline gelir. Bu yazıda onların içinden gelen biri olarak sizlere bu ilginç karakterin bazı niteliklerini anlatmaya çalışacağım. Ralli pilotu içinde bulunduğu durumu objektif olarak muhakeme etme kabiliyeti geliştirmiş bir bireydir. Bu değerlendirmeyi defalarca yanlış, (fazla iyimser/fazla kötümser) yapmış ve yanılmış, bu nedenlerle gerçekçi bir değerlendirme yapmanın önemini kavramıştır. Sessiz ve çoğunlukla içsel bir süreçle sürekli içinde olduğu durumu değerlendirir ve gerekiyorsa pozizyon değiştirir.",
+                Viewer = 2234,
+                Status = true,
+                CreatedDate = DateTime.Now,
+                ModifiedDate = DateTime.Now,
+                ModifierUserId = user.Id,
+                ImagePath = "/Images/Post/25.jpg"
+            }; // spor, eğitim
+
+            Article art26 = new Article
+            {
+                CreatorUserId = user.Id,
+                Title = "Sporcu Velisi Olmak",
+                Content = "Genç sporcuların çoğu antrenmanlarda eğlenememeye başlıyor ve sporu bırakıyor. Keyifsizliğin temelindeki en önemli sebeplerden birisi; sporun aktivite olmaktan çıkıp, rekabet kısmının ağır basmaya başlamasıdır. Bu noktada velilerin de kendilerini, çocuğunun spordan keyif alması için neler yaptığı ve sporu galibiyet/mağlubiyet olarak görmesine sebep olup olmadığı konularında sorgulaması gerekir. Spor rakibi alt etmek olarak değil, rakiple karşılıklı mücadele etmekten duyulan keyif olarak tanımlanmalıdır. Veliler çocuklarına sporun ne olduğunu en doğru şekilde anlatırlarsa, fair-play algısı da kuvvetlenecek ve gelişecektir. Bu nedenle galibiyet değil, iyi ve ahlaklı olmak yüceltilmelidir. Bir veliyi çocuğunun maç kazanması tabii ki mutlu eder ancak sporcunun rakibine, hakemlere, takım arkadaşlarına, antrenörüne ve izleyicilere karşı saygılı olması çok daha değerlidir. Sporcuların ödüllerden değil, rakibiyle karşılıklı spor yapmasından keyif alması sağlanmalıdır. İyi bir birey olmak, her zaman kazanan bir sporcu olmaktan önemlidir. Ayrıca eğitim ve spor, gerekli özen gösterildiği sürece bir arada götürebilir. Sınavların, ödevlerin yoğun olduğu dönemlerde velilerin çocuklarını spordan alıkoymalarına hiç gerek yok. Antrenmanlarda ders ortamının dışına çıkıyor olmanın yanı sıra vücuttaki fazla enerji de atılır. Böylece sporcu-öğrenci derslerine daha kolay odaklanabilir. Kişinin antrenman ve ders çalışma vakitlerini ayarlaması için; kendi isteğiyle düzenleyeceği günlük, haftalık programlar ve dinlenmesine gösterdiği özen yardımcı olacaktır. Aynı zamanda spor, uzun vadede eğitim konusunda avantajlar yaratır. Sporcu-öğrenciler, başarılı performansları sayesinde yurt dışındaki iyi üniversitelerden burslu okuma imkanı kazanabilir. Spor, zaman zaman veliler için çok talepkardır; velilerin hafta sonlarından, dinlenme zamanlarından ödün vermesi gerekebilir. Ancak unutulmamalıdır ki, sporcu-öğrenci ve veli de kendi aralarında bir takımdır. Bu takım arkadaşlığı bağlamında; velilerin kendi zamanlarını sporcu-öğrencinin antrenman saatlerine göre ayarlaması gibi, sporcu-öğrencilerin hem okula hem de antrenmanlara karşı olan motivasyonunu yüksek tutmaya yardımcı olmasına da ihtiyaç duyulabilir. Veliler sporcu-öğrenci yapması gereken görevi yaptığında onu tebrik edip, “aferin” demekten geri kalmamalıdır. Böylece kişi, velisi tarafından onaylanmış olmanın keyfine varacaktır. Bu süreçte sporcu-öğrenci hatalar da yapabilir. Yeri geldiğinde veli çocuğunun hatalar yapmasına izin vermeli ve herkesin hata yapabildiğinin farkına varmasını sağlamalıdır. Aynı zamanda veliler, çocuklarının performansı hakkında olumsuz yorum yapmamalı veya nasıl performans göstermesi hakkında tavsiyelerde bulunmamalıdır. Bu uyarıları ve önerileri gerekli gördüğü taktirde sporcunun antrenörü zaten yapacak ve eksikleri üzerinde sporcuyla beraber çalışacaktır.",
+                Viewer = 1125,
+                Status = true,
+                CreatedDate = DateTime.Now,
+                ModifiedDate = DateTime.Now,
+                ModifierUserId = user.Id,
+                ImagePath = "/Images/Post/26.jpeg"
+            }; // spor, eğitim
+
+            builder.Entity<Article>().HasData(art1, art2, art3, art4, art5, art6, art7, art8, art9, art10, art11, art12, art13, art14, art15, art16, art17, art18, art19, art20, art21, art22, art23, art24, art25, art26);
 
             #endregion
 
@@ -396,7 +435,12 @@ namespace Haber35.DAL.SeedData
                    new { ArticlesId = art22.Id, CategoriesId = edebiyat.Id },
                    new { ArticlesId = art23.Id, CategoriesId = edebiyat.Id },
                    new { ArticlesId = art23.Id, CategoriesId = sanat.Id },
-                   new { ArticlesId = art23.Id, CategoriesId = tarih.Id }
+                   new { ArticlesId = art23.Id, CategoriesId = tarih.Id },
+                   new { ArticlesId = art24.Id, CategoriesId = spor.Id },
+                   new { ArticlesId = art25.Id, CategoriesId = spor.Id },
+                   new { ArticlesId = art25.Id, CategoriesId = egitim.Id },
+                   new { ArticlesId = art26.Id, CategoriesId = spor.Id },
+                   new { ArticlesId = art26.Id, CategoriesId = egitim.Id }
                ));
         }
     }

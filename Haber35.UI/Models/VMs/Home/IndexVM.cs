@@ -11,7 +11,7 @@ namespace Haber35.UI.Models.VMs.Home
         public List<ArticleVM> Populars { get; set; }
         public List<ArticleVM> Recents { get; set; }
         public List<ArticleVM> Sport { get; set; }
-        public List<ArticleVM> Science { get; set; }
+        public List<ArticleVM> Technology { get; set; }
 
     }
 }

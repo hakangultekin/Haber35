@@ -32,5 +32,7 @@ namespace Haber35.CORE.IRepositories
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             Func<IQueryable<T>, IIncludableQueryable<T, object>> includes = null,
             int limit = 0);
+
+        Task<bool> ExecuteRawSqlQuery(string query);
     }
 }

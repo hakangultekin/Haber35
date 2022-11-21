@@ -38,6 +38,7 @@ namespace Haber35.DAL.Repositories
             db.Set<T>().Update(entity);
             return await db.SaveChangesAsync() > 0;
         }
+
         public async Task<List<T>> GetAllWhere(Expression<Func<T, bool>> expression)
         {
             return await db.Set<T>().Where(expression).ToListAsync();
@@ -71,6 +72,11 @@ namespace Haber35.DAL.Repositories
         {
             db.Set<T>().Update(entity);
             return await db.SaveChangesAsync() > 0;
+        }
+
+        public async Task<bool> ExecuteRawSqlQuery(string query)
+        {
+            return await db.Database.ExecuteSqlRawAsync(query) > 0;
         }
     }
 }

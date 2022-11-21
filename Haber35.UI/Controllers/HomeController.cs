@@ -27,16 +27,18 @@ namespace Haber35.UI.Controllers
     {
         private readonly IArticleService _articleService;
         private readonly ICategoryService _categoryService;
+        private readonly ICommentService _commentService;
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly IMapper _mapper;
         private readonly INotyfService _notifyService;
         private readonly ClaimService claimService;
 
-        public HomeController(IArticleService articleService, ICategoryService categoryService ,UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IMapper mapper, INotyfService notifyService)
+        public HomeController(IArticleService articleService, ICategoryService categoryService, ICommentService commentService, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IMapper mapper, INotyfService notifyService)
         {
             _articleService = articleService;
             _categoryService = categoryService;
+            _commentService = commentService;
             _userManager = userManager;
             _signInManager = signInManager;
             _mapper = mapper;
@@ -49,7 +51,9 @@ namespace Haber35.UI.Controllers
             IndexVM vm = new()
             {
                 Populars = _mapper.Map<List<ArticleVM>>(await _articleService.GetPopularArticles()),
-                Recents = _mapper.Map<List<ArticleVM>>(await _articleService.GetRecentArticles())
+                Recents = _mapper.Map<List<ArticleVM>>(await _articleService.GetRecentArticles()),
+                Sport = _mapper.Map<List<ArticleVM>>(await _articleService.GetArticlesByCategoryName("Spor", 5)),
+                Technology = _mapper.Map<List<ArticleVM>>(await _articleService.GetArticlesByCategoryName("Teknoloji", 5))
             };
 
             return View(vm);
@@ -68,11 +72,22 @@ namespace Haber35.UI.Controllers
             return View(_mapper.Map<IEnumerable<CategoryArticlesVM>>(await _articleService.GetArticlesByCategory(cat.Id)));
         }
 
-        public IActionResult ArticleDetail(Guid id)
+        [HttpGet]
+        public async Task<IActionResult> ArticleDetail(Guid id)
         {
-            return View();
+            ArticleDetailVM article = _mapper.Map<ArticleDetailVM>(await _articleService.GetArticleWithDetail(id));
+            ViewBag.PopularArticles = _mapper.Map<List<ArticleVM>>(await _articleService.GetPopularArticles()).Take(10);
+            await _articleService.IncreaseViewerCount(id);
+            return View(article);
         }
 
+        public async Task<IActionResult> CreateArticleComment(CommentCreateDTO commentCreateDTO)
+        {
+            bool result = await _commentService.CreateAsync(commentCreateDTO);
+            if (result) _notifyService.Success("Yorumunuz eklendi");
+            else _notifyService.Error("Yorum ekleme başarısız oldu!");
+            return RedirectToAction("ArticleDetail", new { id = commentCreateDTO.ArticleId });
+        }
 
         [HttpGet]
         public IActionResult Login()

@@ -14,6 +14,7 @@ namespace Haber35.UI.Profiles
         public MainPageProfiles()
         {
             CreateMap<ArticleDTO, ArticleVM>();
+            CreateMap<ArticleDetailDTO, ArticleDetailVM>();
         }
     }
 }

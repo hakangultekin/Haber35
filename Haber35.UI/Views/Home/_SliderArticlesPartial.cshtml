@@ -1,0 +1,40 @@
+﻿@using Haber35.UI.Models.VMs.Home
+@model List<ArticleVM>
+
+<div class="article__entry-carousel">
+    @foreach (var item in Model)
+   {
+       <div class="item">
+        <!-- Post Article -->
+        <div class="article__entry">
+            <div class="article__image">
+                <a asp-action="ArticleDetail" asp-route-id="@item.Id">
+                    <img src="@item.ImagePath" alt="" class="img-fluid">
+                </a>
+            </div>
+            <div class="article__content">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <span class="text-primary">
+                            @item.AuthorUserName
+                        </span>
+                    </li>
+                    <li class="list-inline-item">
+                        <span>
+                            @item.CreatedDate.ToString("dd-MM-yyyy")
+                        </span>
+                    </li>
+
+                </ul>
+                <h5>
+                    <a asp-action="ArticleDetail" asp-route-id="@item.Id">
+                        @item.ShortTitle
+                    </a>
+                </h5>
+
+            </div>
+        </div>
+    </div>
+   }
+    
+</div>

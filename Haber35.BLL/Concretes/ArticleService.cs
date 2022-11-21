@@ -110,6 +110,26 @@ namespace Haber35.BLL.Concretes
             return list;
         }
 
+        public async Task<List<ArticleDTO>> GetArticlesByCategoryName(string categoryName, int limit=0)
+        {
+            List<ArticleDTO> list = await _articleRepository.GetFilteredList(
+                selector: x => new ArticleDTO
+                {
+                    Id = x.Id,
+                    Content = x.Content,
+                    CreatedDate = x.CreatedDate,
+                    ImagePath = x.ImagePath,
+                    Title = x.Title,
+                    Viewer = x.Viewer,
+                    Categories = _mapper.Map<List<CategoryDTO>>(x.Categories),
+                },
+                includes: x => x.Include(c => c.Categories),
+                expression: x => x.Status == true && x.Categories.Any(x => x.CategoryName == categoryName),
+                limit : limit
+                );
+            return list;
+        }
+
         public async Task<ArticleDTO> GetByIdAsync(Guid id)
         {
             ArticleDTO article = await _articleRepository.GetFilteredFirstOrDefault(
@@ -146,7 +166,7 @@ namespace Haber35.BLL.Concretes
                 includes: x => x.Include(c => c.Categories).Include(c => c.CreatorUser),
                 expression: x => x.Status == true,
                 orderBy: x => x.OrderByDescending(a => a.Viewer),
-                limit : 20
+                limit: 20
                 );
             return list;
         }
@@ -186,6 +206,32 @@ namespace Haber35.BLL.Concretes
 
 
             return await _articleRepository.UpdateAsync(article);
+        }
+
+        public async Task<ArticleDetailDTO> GetArticleWithDetail(Guid articleId)
+        {
+            ArticleDetailDTO article = await _articleRepository.GetFilteredFirstOrDefault(
+                selector: x => new ArticleDetailDTO
+                {
+                    Id = x.Id,
+                    AuthorUserName = x.CreatorUser.UserName,
+                    Content = x.Content,
+                    CreatedDate = x.CreatedDate,
+                    ImagePath = x.ImagePath,
+                    Title = x.Title,
+                    Viewer = x.Viewer,
+                    Categories = _mapper.Map<List<CategoryDTO>>(x.Categories),
+                    Comments = _mapper.Map<List<CommentDTO>>(x.Comments)
+                },
+                includes: x => x.Include(c => c.Categories).Include(cm => cm.Comments).Include(u => u.CreatorUser),
+                expression: x => x.Id == articleId
+            );
+            return article;
+        }
+
+        public async Task<bool> IncreaseViewerCount(Guid articleId)
+        {
+            return await _articleRepository.ExecuteRawSqlQuery($"Update Articles Set Viewer = Viewer+1 where Id='{articleId}'");
         }
     }
 }

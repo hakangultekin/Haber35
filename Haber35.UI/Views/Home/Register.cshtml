@@ -39,8 +39,8 @@
                         <div class="card">
                             <div class="card-body p-0 auth-header-box">
                                 <div class="text-center p-3">
-                                    <a href="index.html" class="logo logo-admin">
-                                        <img src="/AdminAssets/logo.png" height="50" alt="logo" class="auth-logo">
+                                    <a asp-controller="Home" asp-action="Index" class="logo logo-admin">
+                                        <img src="~/images/placeholder/logoyeni.png" height="50" alt="logo" class="auth-logo">
                                     </a>
                                     <h4 class="mt-3 mb-1 font-weight-semibold text-white font-18">Kayıt Olun</h4>
                                 </div>
@@ -57,17 +57,18 @@
                                     <form class="form-horizontal auth-form my-4" id="register-form" asp-controller="Home" asp-action="Register" method="post" autocomplete="off">
                                         <div class="form-group">
                                             <label for="UserName">Kullanıcı Adı</label>
-                                            <div class="input-group mb-3">
+                                            <div class="input-group">
                                                 <input type="text" class="form-control" asp-for="UserName" placeholder="Kullanıcı Adı">
                                             </div>
-                                            <span asp-validation-for="UserName"></span>
+                                            <span class="text-danger text-sm" asp-validation-for="UserName"></span>
                                         </div><!--end form-group-->
 
                                         <div class="form-group">
                                             <label for="Email">Email</label>
-                                            <div class="input-group mb-3">
+                                            <div class="input-group">
                                                 <input type="email" class="form-control" asp-for="Email" placeholder="Email">
                                             </div>
+                                            <span class="text-danger text-sm" asp-validation-for="Email"></span>
                                         </div><!--end form-group-->
 
                                         <div class="row">
@@ -76,6 +77,7 @@
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" asp-for="FirstName" placeholder="İsim">
                                                 </div>
+                                                <span class="text-danger text-sm" asp-validation-for="FirstName"></span>
                                             </div><!--end form-group-->
 
                                             <div class="form-group col">
@@ -83,6 +85,7 @@
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" asp-for="LastName" placeholder="Soyisim">
                                                 </div>
+                                                <span class="text-danger text-sm" asp-validation-for="LastName"></span>
                                             </div><!--end form-group-->
                                         </div>
 
@@ -91,11 +94,13 @@
                                             <div class="input-group mb-3">
                                                 <input type="text" class="form-control" asp-for="PhoneNumber" placeholder="Telefon Numarası">
                                             </div>
+                                            <span class="text-danger text-sm" asp-validation-for="PhoneNumber"></span>
                                         </div><!--end form-group-->
 
                                         <div class="form-group">
                                             <label for="Adress">Adres</label>
                                             <textarea asp-for="Adress" rows="3" class="form-control" placeholder="Adres ..."></textarea>
+                                            <span class="text-danger text-sm" asp-validation-for="Adress"></span>
                                         </div>
 
                                         <div class="row">
@@ -151,13 +156,20 @@
 
             let isValid = true;
 
-            if($('#Password').val() != $('#RePassword').val()){
-                notyf.error("Şifreler eşleşmiyor.")
+            if(!$('#RePassword').val() || !$('#Password').val()){
+                notyf.error("Şifre girmelisiniz.")
                 isValid = false;
             }
+            else{
+                if($('#Password').val() != $('#RePassword').val()){
+                    notyf.error("Şifreler eşleşmiyor.")
+                    isValid = false;
+                }
+            }
+
 
             if(!$('#customSwitchSuccess2').prop('checked')){
-                notyf.error("Koşulları onaylayın.")
+                notyf.error("Koşulları onaylamalısınız.")
                 isValid = false;
             }
 

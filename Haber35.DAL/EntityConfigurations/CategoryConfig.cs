@@ -16,7 +16,6 @@ namespace Haber35.DAL.EntityConfigurations
             builder.HasOne(x => x.CreatorUser).WithMany(x => x.Categories).HasForeignKey(x => x.CreatorUserId);
             builder.HasMany(x => x.Articles).WithMany(x => x.Categories);
             builder.Property(x => x.CategoryName).IsRequired().HasMaxLength(100);
-            builder.Property(x => x.Id).HasDefaultValueSql("NEWID()");
         }
     }
 }

@@ -14,10 +14,13 @@ namespace Haber35.BLL.Abstracts
         Task<List<ArticleDTO>> GetAllPassivesAsync();
         Task<ArticleDTO> GetByIdAsync(Guid id);
         Task<List<ArticleDTO>> GetArticlesByCategory(Guid categoryId);
+        Task<List<ArticleDTO>> GetArticlesByCategoryName(string categoryName, int limit=0);
         Task<List<ArticleDTO>> GetPopularArticles();
         Task<List<ArticleDTO>> GetRecentArticles();
         Task<bool> UpdateAsync(ArticleUpdateDTO articleUpdateDTO);
         Task<bool> DeleteAsync(Guid id);
         Task<bool> ActiveArticleAsync(Guid id);
+        Task<ArticleDetailDTO> GetArticleWithDetail(Guid articleId);
+        Task<bool> IncreaseViewerCount(Guid articleId);
     }
 }

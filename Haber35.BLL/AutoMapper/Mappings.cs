@@ -20,6 +20,7 @@ namespace Haber35.BLL.AutoMapper
 
             CreateMap<ArticleCreateDTO, Article>().ForAllMembers(x => x.UseDestinationValue());
             CreateMap<ArticleUpdateDTO, Article>().ForAllMembers(x => x.UseDestinationValue());
+            CreateMap<ArticleDetailDTO, Article>().ForAllMembers(x => x.UseDestinationValue());
 
             CreateMap<CommentUpdateDTO, Comment>();
             CreateMap<CommentCreateDTO, Comment>();
